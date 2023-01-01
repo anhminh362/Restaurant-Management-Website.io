@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="menuorder.css">
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+    <div class="container-fluid">
+        <div class="header">
+          <div class=" row banner">
+            <div class="nameres col-md-3">
+              <h1>YumYum</h1>
+            </div>
+            <div class=" col-md-6">
+            <div class="search">
+              <form action="/search" class="input-group  " >
+                <input type="text"  class="input-group-field auto-search form-control " required="Hãy nhập món đi!" placeholder="Tìm kiếm">
+                <span class="input-group-btn btn-action"  >
+                    <button type="submit"  class="btn text-white icon-fallback-text h-100" >	
+                        <i href="#" class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </span>
+              </form>       
+            </div>
+            </div>
+            <div class=" col-md-3">
+              <svg href="#" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <nav class="nav-container">
+          <div class="header-container flex justify-end">
+            <ul>
+              <li class="items-center " href="#">
+                <p href="#">YumYum eGift-voucher</p>
+              </li>
+              <div class="verticalLine">
+              </div>
+              <li class="items-center" href="#">
+                <p href="#">Chính sách giao hàng</p>
+              </li>
+              <div class="verticalLine">
+              </div>
+              <li class="items-center"href="#">
+                <p href="#">Chính sách đổi trả và hoàn tiền</p>
+              </li>
+              <div class="verticalLine">
+              </div>
+              <li class="items-center" href="#">
+                <p href="#">  Đường dây nóng: <a>19006043</a></p>
+              </li>
+              <li class="items-center account " >
+                <p class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="fa-regular fa-face-smile"></i> Tài khoản <i class="fa-sharp fa-solid fa-caret-down"></i></p>
+                <!-- Button trigger modal -->
+                <!-- Modal -->
+                <div style="width:500px; margin-left:800px; margin-top:100px;" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Chào mừng bạn đến với YumYum</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <center>
+                        <div class="modal-body">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Đăng ký</button>
+                          <button type="button" class="btn btn-secondary">Đăng nhập</button>
+                          <br>
+                          <br>
+                          <p><i class="fa-solid fa-face-smile"></i>Thông tin cá nhân</p>
+                          <p><i class="fa-solid fa-location-dot"></i>Địa chỉ của tôi</p>
+                          <p><i class="fa-duotone fa-rectangle-vertical-history"></i>Lịch sử đặt hàng</p>
+                        </div>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="app-container">
+            <div class="home-page">
+              <div class="row col-12">
+                <div class="col-md-9">
+                  <img class="one" src="https://delivery.pizza4ps.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2F4ps_strapi%2FPizza4_Ps_Gift_Voucher_02_880x334_14a5d32671%2FPizza4_Ps_Gift_Voucher_02_880x334_14a5d32671.png&w=1920&q=75">
+                  <img class="two" src="https://delivery.pizza4ps.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2F4ps_strapi%2FPizza4_Ps_Web_Banner_080822_02_7a0af1e1ce%2FPizza4_Ps_Web_Banner_080822_02_7a0af1e1ce.jpg&w=1920&q=75">
+                  <img class="three" src="https://delivery.pizza4ps.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2F4ps_strapi%2FPizza4_Ps_Web_Banner_080822_01_8084126838%2FPizza4_Ps_Web_Banner_080822_01_8084126838.jpg&w=1920&q=75">
+                </div>
+                <div class="col-md-3">
+                  <div class="account-card shadow-primary rounded-t-4xl rounded-b-5xl ">
+                    <div class="flex flex-col items-center justify-center w-full">
+                      <div>
+                        <p class="text-30 text-center font-semibold mt-3 w-full text-primary-500">Chào mừng bạn đến với
+                          <p class="font-semibolds">YumYum</p>
+                        </p>
+                       
+                      </div>
+                      <p>
+                        <div class="row">
+                          <span class="italic quote">
+                            *The happiness of your life depends upon the quality of your thoughts.*
+                          </span>
+                          <span class="text-16">Marcus Aurelius</span>
+                        </div>
+                          
+                      </p>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+            <div class="menu-page">
+              <div class="menu">
+                <h2>Menu</h2>
+                <div class="wrapper-menu">
+                  <div class="underfail">
+                    <div class="f-flex">
+                      <div class="f-flex-col">
+                        <div class="item-image  reltive">
+                          <span >
+                            <img  class="images" src="https://images.heb.com/is/image/HEBGrocery/recipe-hm-large/wagyu-beef-hot-pot-recipe.jpg" >
+                          </span>
+                        </div>
+                        <div class="item-name">
+                          <p class="flex justify-center ">Dishes</p>
+                        </div>
+                      </div>
+                      
+                      <div class="f-flex-col">
+                        <div class="item-image  reltive">
+                          <span >
+                            <img  class="images" src="https://yangsnourishingkitchen.com/wp-content/uploads/2017/09/Adrenal-Support-Chinese-Herbs-Pig-Stomach-Soup-Yangs-Nourishing-Kitchen-3.jpg">
+                          </span>
+                        </div>
+                        <div class="item-name">
+                          <p class="flex justify-center ">Soup</p>
+                        </div>
+                      </div>
+                      <div class="f-flex-col">
+                        <div class="item-image  reltive">
+                          <span >
+                            <img class="images" src="https://delivery.pizza4ps.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fdelivery-system-v2%2F02-06-2021%2520Image%2FCate%2520Image%2FSaladx2.png&w=1920&q=75">
+                          </span>
+                        </div>
+                        <div class="item-name">
+                          <p class="flex justify-center ">Salad</p>
+                        </div>
+                      </div>
+                      <div class="f-flex-col">
+                        <div class="item-image  reltive">
+                          <span >
+                            <img  class="images" src="https://delivery.pizza4ps.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fdelivery-system-v2%2F02-06-2021%2520Image%2FCate%2520Image%2FPastax2.png&w=1920&q=75">
+                          </span>
+                        </div>
+                        <div class="item-name">
+                          <p class="flex justify-center ">Món Chính/ Mì Ý</p>
+                        </div>
+                      </div>
+                      <div class="f-flex-col">
+                        <div class="item-image  reltive">
+                          <span >
+                            <img  class="images" src="https://www.foxyfolksy.com/wp-content/uploads/2017/10/lechon-kawali.jpg">
+                          </span>
+                        </div>
+                        <div class="item-name">
+                          <p class="flex justify-center ">Snack</p>
+                        </div>
+                      </div>
+                      <div class="f-flex-col">
+                        <div class="item-image  reltive">
+                          <span >
+                            <img  class="images" src="https://draftmag.com/wp-content/uploads/2022/02/Glass-of-weiss-beer.jpg">
+                          </span>
+                        </div>
+                        <div class="item-name">
+                          <p class="flex justify-center ">Drink</p>
+                        </div>
+                      </div>
+                      <div class="f-flex-col">
+                        <div class="item-image  reltive">
+                          <span >
+                            <img  class="images" src="https://i.pinimg.com/originals/06/de/1c/06de1ce4e33750b1a67c3887fced77f2.jpg">
+                          </span>
+                        </div>
+                        <div class="item-name">
+                          <p class="flex justify-center ">Seafood</p>
+                        </div>
+                      </div>
+                      <div class="f-flex-col">
+                        <div class="item-image  reltive">
+                          <span >
+                            <img  class="images" src="https://delivery.pizza4ps.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fdelivery-system-v2%2F02-06-2021%2520Image%2FCate%2520Image%2FMarketIconx2.png&w=1920&q=75">
+                          </span>
+                        </div>
+                        <div class="item-name">
+                          <p class="flex justify-center ">Market</p>
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+
+                </div>              
+              </div>
+            </div>
+            <div class="mt-12">
+                <div class="navigate">
+                  <div class="flex items-center">
+                    <h2>Phổ biến</h2>
+                  </div>
+                  <div class="lookall items-center">
+                    <a href="http://127.0.0.1:5500/menuorder/menuall.html">"xem tất cả"</a>
+                </div>
+              </div>
+                <div class="item-list">
+                  <ul class="popular">
+                    <li>
+                      <div class="text">
+                        <span>Gợi ý</span>
+                      </div>
+                      <div class="rect-image">
+                        <img style="width: 180px; height: 180px;" src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/11/18121104/best-chinese-herbal-soups-in-singapore-tan-ser-seng-1.jpg">
+                      </div>
+                      <div class="content">
+                        <div class="contents">
+                          <h3>
+                            Mì Ý cua
+                            <br>
+                            và xốt kem cà chua
+                          </h3>
+                        </div>
+                          <div class="addfood">
+                            <button type="text" >
+                              <a href="http://127.0.0.1:5500/order/addfood.html">
+                                ADD
+                              </a>
+                            </button>
+                            <p>248,000 vnđ</p>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="text">
+                        <span>Gợi ý</span>
+                      </div>
+                      <div class="rect-image">
+                        <img style="width: 180px; height: 180px;" src="https://i.pinimg.com/originals/06/de/1c/06de1ce4e33750b1a67c3887fced77f2.jpg">
+                      </div>
+                      <div class="content">
+                        <div class="contents">
+                          <h3>
+                            Mì Ý bò bằm và
+                            <br>
+                            phô mai hun khói
+                          </h3>
+                        </div>
+                          <div class="addfood">
+                            <button type="text" >
+                              <a href="http://127.0.0.1:5500/order/addfood.html">
+                                ADD
+                              </a>
+                            </button>
+                            <p>348,000 vnđ</p>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="text">
+                        <span>Gợi ý</span>
+                      </div>
+                      <div class="rect-image">
+                        <img style="width: 180px; height: 180px;" src="https://4.bp.blogspot.com/-wmKNlVUkeV0/WKcmp3w79hI/AAAAAAAAnI4/KTK-Ki0j03sGrz3kOymgBPVFIRQulbsdgCLcB/s1600/Menudo_5.jpg?utm_source=zalo&utm_medium=zalo&utm_campaign=zalo">
+                      </div>
+                      <div class="content">
+                        <div class="contents">
+                          <h3>
+                            Pizza 4 loại phô mai
+                            <br>
+                            nhà làm
+                          </h3>
+                        </div>
+                          <div class="addfood">
+                            <button type="text" >
+                              <a href="http://127.0.0.1:5500/order/addfood.html">
+                                ADD
+                              </a>
+                            </button>
+                            <p>248,000 vnđ</p>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="text">
+                        <span>Gợi ý</span>
+                      </div>
+                      <div class="rect-image">
+                        <img style="width: 180px; height: 180px;" src="http://wiki-travel.com.vn/Uploads/picture/qiongru-204916104905-lau-viet-nam.jpg">
+                      </div>
+                      <div class="content">
+                        <div class="contents">
+                          <h3>
+                            Pizza Margherita
+                            <br>
+                            <br>
+                          </h3>
+                        </div>
+                          <div class="addfood">
+                            <button type="text" >
+                              <a href="http://127.0.0.1:5500/order/addfood.html">
+                                ADD
+                              </a>
+                            </button>
+                            <p>298,000 vnđ</p>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="text">
+                        <span>Gợi ý</span>
+                      </div>
+                      <div class="rect-image">
+                        <img style="width: 180px; height: 180px;" src="https://mykoreankitchen.com/wp-content/uploads/2021/02/1.-Yukgaejang.jpg">
+                      </div>
+                      <div class="content">
+                        <div class="contents">
+                          <h3>
+                            Pizza 3 loại phô mai
+                            <br>
+                            nhà làm
+                          </h3>
+                        </div>
+                          <div class="addfood">
+                            <button type="text" >
+                              <a href="http://127.0.0.1:5500/order/addfood.html">
+                                ADD
+                              </a>
+                            </button>
+                            <p>648,000 vnđ</p>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="text">
+                        <span>Gợi ý</span>
+                      </div>
+                      <div class="rect-image">
+                        <img style="width: 180px; height: 180px;" src="https://peasandcrayons.com/wp-content/uploads/2018/10/lentil-vegan-vegetarian-stuffed-pepper-soup-recipe-4.jpg">
+                      </div>
+                      <div class="content">
+                        <div class="contents">
+                          <h3>
+                            Pizza 3 loại phô mai
+                            <br>
+                            nhà làm
+                          </h3>
+                        </div>
+                          <div class="addfood">
+                            <button type="text" >
+                              <a href="http://127.0.0.1:5500/order/addfood.html">
+                                ADD
+                              </a>
+                            </button>
+                            <p>648,000 vnđ</p>
+                          </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+
+            <div class="suggest">
+                <div class="navigate">
+                  <div class="flex items-center">
+                    <h2>Gợi ý cho bạn </h2>
+                  </div>
+                  <div class="lookall items-center">
+                    <a href="http://127.0.0.1:5500/menuorder/menuall.html">"xem tất cả"</a>
+                  </div>
+                </div>
+                <div class="item-list">
+                  <ul class="special">
+                    <li>
+                      <div class="text">
+                        <span>Món đặc biệt</span>
+                      </div>
+                      <div class="rect-image">
+                        <img style="width: 180px; height: 180px;" src="https://glebekitchen.com/wp-content/uploads/2018/07/tomyumbigbowl.jpg">
+                      </div>
+                      <div class="content">
+                        <div class="contents">
+                          <h3>
+                            (Doria) Cơm “Gratin”
+                            <br>
+                            hải sản đút lò
+                          </h3>
+                        </div>
+                          <div class="addfood">
+                            <button type="text" >
+                              <a href="http://127.0.0.1:5500/order/addfood.html">
+                                ADD
+                              </a>
+                            </button>
+                            <p>248,000 vnđ</p>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="text">
+                        <span>Món đặc biệt</span>
+                      </div>
+                      <div class="rect-image">
+                        <img style="width: 180px; height: 180px;" src="https://www.healthier.qld.gov.au/wp-content/uploads/2015/07/Easy-Beef-Hotpot-0018.jpg">
+                      </div>
+                      <div class="content">
+                        <div class="contents">
+                          <h3>
+                            (Doria) Cơm “Gratin”
+                            <br>
+                            xốt thịt đút lò
+                          </h3>
+                        </div>
+                          <div class="addfood">
+                            <button type="text" >
+                              <a href="http://127.0.0.1:5500/order/addfood.html">
+                                ADD
+                              </a>
+                            </button>
+                            <p>348,000 vnđ</p>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="text">
+                        <span>
+                          <br>
+                          
+                        </span>
+                      </div>
+                      <div class="rect-image">
+                        <img style="width: 180px; height: 180px;" src="https://www.brewer-world.com/wp-content/uploads/2021/04/real-ale-header.jpg">
+                      </div>
+                      <div class="content">
+                        <div class="contents">
+                          <h3>
+                            Rượu Sake tự nhiên
+                            <br>
+                            Niida-honke (1.8L)
+                          </h3>
+                        </div>
+                          <div href="#" class="addfood">
+                            <button type="text" >
+                              <a href="http://127.0.0.1:5500/order/addfood.html">
+                                ADD
+                              </a>
+                            </button>
+                            <p>22,448,000 vnđ</p>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="text">
+                        <span>Mới</span>
+                      </div>
+                      <div class="rect-image">
+                        <img style="width: 180px; height: 180px;" src="https://www.chinasichuanfood.com/wp-content/uploads/2014/12/fried-mantou-with-condensed-milk-7-copy.jpg">
+                      </div>
+                      <div class="content">
+                        <div class="contents">
+                          <h3>
+                            Các loại phô mai
+                            <br>
+                            nhà làm (L)
+                          </h3>
+                        </div>
+                          <div class="addfood">
+                            <button type="text" >
+                              <a href="http://127.0.0.1:5500/order/addfood.html">
+                                ADD
+                              </a>
+                            </button>
+                            <p>6,298,000 vnđ</p>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="text">
+                        <span>Gợi ý</span>
+                      </div>
+                      <div class="rect-image">
+                        <img style="width: 180px; height: 180px;" src="https://www.recipetineats.com/wp-content/uploads/2018/03/Egg-Fried-Rice_5-1.jpg">
+                      </div>
+                      <div class="content">
+                        <div class="contents">
+                          <h3>
+                            Mì Ý cua
+                            <br>
+                            và xốt kem cà chua
+                          </h3>
+                        </div>
+                          <div class="addfood">
+                            <button type="text" >
+                              <a href="http://127.0.0.1:5500/order/addfood.html">
+                                ADD
+                              </a>
+                            </button>
+                            <p>6,448,000 vnđ</p>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="text">
+                        <span>Gợi ý</span>
+                      </div>
+                      <div class="rect-image">
+                        <img style="width: 180px; height: 180px;" src="https://panlasangpinoy.com/wp-content/uploads/2021/04/How-to-Make-Crispy-Pork-Belly-1.jpg">
+                      </div>
+                      <div class="content">
+                        <div class="contents">
+                          <h3>
+                            Mì Ý cua
+                            <br>
+                            và xốt kem cà chua
+                          </h3>
+                        </div>
+                          <div class="addfood">
+                            <button type="text" >
+                              <a href="http://127.0.0.1:5500/order/addfood.html">
+                                ADD
+                              </a>
+                            </button>
+                            <p>6,448,000 vnđ</p>
+                          </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="recommend">
+              <div class="face-mile">
+                <div class="title">
+                  <p>Trải nghiệm của quý khách với Trang Giao Hàng chúng tôi như thế nào?</p>
+                </div>
+                <div class="faces-ml">
+                  <span>
+                    <img href="#" src="https://delivery.pizza4ps.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon_rating_1.c9455733.png&w=1920&q=75" >
+                  </span>
+                  <span>
+                    <img href="#" src="https://delivery.pizza4ps.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon_rating_2.abc16a0d.png&w=1920&q=75">
+                  </span>
+                  <span>
+                    <img href="#" src="https://delivery.pizza4ps.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon_rating_3.2f4b1389.png&w=1920&q=75">
+                  </span>
+                  <span>
+                    <img href="#"src="https://delivery.pizza4ps.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon_rating_4.0f1096ef.png&w=1920&q=75">
+                  </span>
+                  <span>
+                    <img href="#" src="https://delivery.pizza4ps.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon_rating_5.3af493c3.png&w=1920&q=75">
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+    </div>
+    <div class="footer">
+      <div class="detail">
+        <div class="title">
+          <h5> About <br> YumYum</h5>
+          <br>
+          <br>
+          <p>Hot Pot Culture
+            <br>
+            <br>
+            Brand Story
+            <br>
+            <br>
+            Mission
+            <br>
+            <br>
+            Corporate Social 
+            <br>
+            Responsibility
+            <br>
+            <br>
+            Media Center
+          </p>
+        </div>
+        <div class="title">
+          <h5> YumYum <br>Cuisine </h5>
+          <br>
+          <br>
+          <p>
+            Soup Bases 
+            <br>
+            <br>
+            Dishes 
+            <br>
+            <br>
+            Special Sauces 
+            <br>
+            <br>
+            Snacks 
+            <br>
+            <br>
+            Beverage 
+            <br>
+            <br>
+            Food Safety 
+          </p>
+        </div>
+        <div class="title">
+          <h5> Service<br> Center </h5>
+          <br>
+          <br>
+          <p>
+            Branch Locator 
+            <br>
+            <br>
+            Contact Us 
+            <br>
+            <br>
+            Hi Card 
+            <br>
+            <br>
+            Hi Delivery 
+            
+          </p>
+        </div>
+        <div class="title">
+          <h5>  Investor<br> Relations  </h5>
+          <br>
+          <br>
+          <p>
+            Corporate Governance 
+            <br>
+            <br>
+            Prospectus 
+            <br>
+            <br>
+            Announcements and Circulars 
+            <br>
+            <br>
+            Results and Reports 
+            <br>
+            <br>
+            Beverag Contact us 
+           
+          </p>
+        </div>
+        <div class="title">
+          <h5>   Join Us   </h5>
+          <br>
+          <br>
+          <br>
+          <p>
+            Social Recruitment 
+           
+           
+          </p>
+        </div>
+        <div class="title">
+          <h5>   YumYum <br> Membership  </h5>
+          <br>
+          <br>
+          <p>
+            Member Guidelines  
+            <br>
+            <br>
+            Member Benefits  
+            <br>
+            <br>
+            Notice to Members 
+            <br>
+            <br>
+            Privacy Policy 
+          </p>
+        </div>
+        <div class="title">
+          <h5>   Related links   </h5>
+          <br>
+          <br>
+          <br>
+          <p>
+            New Restaurant Expansion Platform 
+            <br>
+            <br>
+            Procurement Bidding Platform 
+            <br>
+            <br>
+            Yihai International Holding Ltd. 
+            <br>
+            <br>
+            Shuhai Supply Chain Solutions 
+            <br>
+            <br>
+            Beijing Microsea Management Consulting Co., Ltd. 
+          </p>
+        </div>
+      </div>
+  </div>
+  </header>
+  <main>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
