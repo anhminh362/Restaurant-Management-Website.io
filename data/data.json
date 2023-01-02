@@ -1,0 +1,38 @@
+{
+    "users": [
+        {
+            "isAdmin": true,
+            "id": 1,
+            "userName": "ABC",
+            "passWord": 123
+        },
+        {
+            "isAdmin": false,
+            "id": 2,
+            "userName": "BDF",
+            "passWord": 123
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "quantity": 10,
+            "name": "Pizza",
+            "price": 150000,
+            "desc": "ABC",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCo2kMa6BEXr9GaP7lvu9vugKv-6lj2LSc_wU0lV7rEA&s"
+        }
+    ],
+    "orders": [
+        {
+            "idOrder": 1,
+            "products": [
+                {
+                    "id": 1,  
+                    "quantity": 2
+                }
+            ],
+            "totalPrice": 100000
+        }
+    ]
+}

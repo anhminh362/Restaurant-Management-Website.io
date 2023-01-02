@@ -1,0 +1,461 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.container-fluid{
+    display: grid;
+    background-color: rgb(243, 243, 200) ;
+}
+header{
+    height: 60px;
+    margin-right: 0px;
+    margin-left: 0px;
+    
+}
+
+.banner{
+    width:auto;
+    margin-top: 0px;
+    height: 60px;
+    background-color: blue;
+    display: flex;
+    margin-left: -15px;
+}
+.header .banner h1{
+   margin-bottom: center;
+    color:rgb(243, 243, 200);
+    display: flex;
+    margin-left: 0px;
+    margin-left: 50px;
+}
+.search{
+    position: relative;
+}
+.header .input-group{
+    background-color: rgb(243, 243, 200);
+    padding:5px;
+    margin-top: 6px;
+    border-radius: 15px;
+    width:400px;
+    margin-left: 70px;
+}
+.input-group-field{
+    background-color: rgb(243, 243, 200);
+    border:0px solid;
+}
+.input-group-btn i{
+    color:black;
+}
+.banner .col-md-3 svg{
+    color:rgb(243, 243, 200);
+    margin-top: 6px ;
+    width:40px;
+    height:40px;
+    margin-left:125px;
+}
+.nav-container{
+    height: 1,5rem;
+    margin-left: 0px;
+    background-color: white;
+
+}
+.header-container ul{
+    display:flex;
+}
+.nav-container .header-container  p{
+    margin-left: 10px;
+    font-size: medium;
+}
+.nav-container .header-container  p a{
+    color:red;
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+p, ul {
+    margin: 0;
+}
+ol, ul {
+    list-style: none;
+}
+.verticalLine {
+    border-left: 1px solid #000000;
+    margin-left: 10px;
+}
+.account{
+    margin-left: 200px;
+}
+
+.app-container{
+    width:100%;
+    margin-top: 10px;
+    height: auto;
+    display: grid;
+}
+.app-container .col-12{
+    display:flex;
+}
+.app-container .home-page .row{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.app-container .row .col-md-9{
+    display:flex;
+    margin-top: 32px;
+}
+.app-container .row .col-md-9 .two{
+    margin-left: 5px;
+}
+.app-container .row .col-md-9 .three{
+    margin-left: 5px;
+}
+.app-container .row .col-md-9 img{
+    height:145px;
+    width: 340px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius: 30px;
+    margin-right: 0px;
+}
+.app-container .row .col-md-9 .two{
+    display:block;
+}
+.app-container .row .col-md-9 .three{
+    display: block;
+}
+.app-container .row{
+    margin-left: 0px;
+}
+.app-container .row .col-md-3 .account-card{
+    background-color: rgb(255, 255, 255);
+    width:300px;
+    height: 200px;
+    margin-top: 0px;
+    margin-right: 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius: 30px;
+}
+.app-container .row .col-md-3 .account-card{
+    font-size: semibold;
+    
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+.font-semibolds {
+    font-weight: 600;
+    margin-left: 50px;
+}
+.items-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.flex-col {
+    flex-direction: column;
+}
+.w-full {
+    width: 100%;
+}
+.flex {
+    display: flex;
+}
+
+.account-card .content .quote {
+    display:flex;
+    text-align: center;
+}
+.account-card .content .text-16{
+    text-align: center;
+}
+.italic {
+    font-style: italic;
+    color:red;
+    font-size: 13px;
+    display: grid;
+    text-align: center;
+}
+.text-16{
+    color:red;
+    font-size: 13px;
+    display:flex;
+    font-display: initial;
+    text-align: center;
+}
+.menu-page{
+    margin-top: 32px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.wrapper-menu{
+    margin-top: 3px;
+    width: 100%;
+}
+.menu-page .underfined{
+    display: flex;
+    margin-bottom: 13px;
+}
+.menu-page  .underfail {
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+}
+.f-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -1rem;
+    flex-flow: row wrap;
+}
+
+.f-flex-col {
+    flex: 1 0;
+    background-color: rgb(255, 255, 255);
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px;
+    width: 100px;
+    position: relative;
+    height:auto;
+}
+.f-flex-col img{
+    width:140px; 
+    height:90px;
+    margin-top: -16px;
+    margin-left: -16px;
+    margin-right: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.manu-page .menu  .wrapper-menu .images{
+    
+    position: absolute;
+    width:50px;
+
+}
+.menu-page .menu  .item-name .flex{
+    display: flex;
+    text-align: center;
+    margin-top: 7px;
+    font-size: 11px;
+    color:blue;
+}
+.wrapper-menu .menu  .item-name {
+    min-height: 6.6rem;
+}
+ .menu-page .menu.items-center {
+    align-items: center;
+}
+.mt-12{
+    margin-top: 32px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.mt-12 .navigate{
+    display:flex;
+}
+.mt-12 .lookall{
+    margin-left: 80%;
+
+}
+.mt-12 .lookall a{
+    font-size: 15px;
+    color:blue;
+    text-decoration: none;
+}
+.item-list{
+    margin-left:-30px;
+    margin-right: 0px;
+}
+.mt-12  .popular{
+    display:flex;
+    grid-template-columns: repeat (5,minmax(0,1fr));
+    gap:6px;
+    row-gap: 6px;
+    column-gap: 6px;
+}
+.mt-12 .items-center{
+    margin-bottom: 6px;
+}
+.mt-12 .item-list ul li{
+    background:white;
+    width:200px;
+    height:350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px;
+}
+.mt-12  .popular .text{
+    margin-top: 3px;
+    margin-left: 5px;
+    color:green;
+    border: 2px;
+    padding: 10px;
+}
+.mt-12  .popular .rect-image{
+    margin-left:10px ;
+}
+.mt-12 .content{
+    margin-top: 7px;
+    text-align: center;
+    color:rgb(4, 4, 131);
+}
+.mt-12 .content h3{
+    font-size: 13px;
+}
+.addfood {
+    text-align: center;
+    border-radius: 50%;
+    color:rgb(4, 4, 131);
+}
+.addfood {
+    font-size: 13px;
+    border: 2px ;
+    color:rgb(4, 4, 131);
+    
+}
+.addfood a{
+    text-decoration: none;
+    color:rgb(4, 4, 131);
+}
+.addfood button{
+    background-color: rgb(2, 206, 2);
+    color:white;
+}
+.suggest{
+    margin-top: 32px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.suggest .navigate{
+    display:flex;
+}
+.suggest .lookall{
+    margin-left: 73%;
+
+}
+.suggest .lookall a{
+    font-size: 15px;
+    color:blue;
+    text-decoration: none;
+}
+.item-list{
+    margin-left:-30px;
+    margin-right: 0px;
+}
+.suggest  .special{
+    display:flex;
+    grid-template-columns: repeat (5,minmax(0,1fr));
+    gap:6px;
+    row-gap: 6px;
+    column-gap: 6px;
+}
+.suggest .items-center{
+    margin-bottom: 6px;
+}
+.suggest .item-list ul li{
+    background:white;
+    width:200px;
+    height:350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px;
+}
+.suggest  .special .text{
+    margin-top: 3px;
+    margin-left: 5px;
+    color:green;
+    border: 2px;
+    padding: 10px;
+}
+.suggest  .special .rect-image{
+    margin-left:10px ;
+}
+.suggest .content{
+    margin-top: 7px;
+    text-align: center;
+    color:rgb(4, 4, 131);
+    
+}
+.suggest .content h3{
+    font-size: 13px;
+}
+.addfood .add{
+    text-align: center;
+    border-radius: 50%;
+    color:rgb(4, 4, 131);
+}
+.addfood p{
+    font-size: 13px;
+    border: 2px ;
+    color:rgb(4, 4, 131);
+}
+.addfood button{
+    border-color:rgb(4, 4, 131) ;
+    color:rgb(4, 4, 131);
+}
+.recommend{
+    margin-top: 32px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.recommend .face-mile{
+    width: 450px;
+    height:170px;
+    background-color: white  ;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px;
+}
+.recommend .title{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.recommend .faces-ml{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.recommend .faces-ml span img {
+    margin-left: 10px;
+    width: 75px;
+    height: 75px;
+}
+.footer{
+    width:auto;
+    height:auto;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.footer .detail{
+    display:flex;
+    grid-template-columns: repeat (7,minmax(0,1fr));
+    gap:6px;
+    row-gap: 6px;
+    column-gap: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: center;
+}
+.footer .detail .title{
+    margin-left: 20px;
+}

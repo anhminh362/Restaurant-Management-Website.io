@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container-fluid{
+    width:100%;
+    height:650px;
+    margin-top: 0px;
+    background-color:rgba(17, 17, 17, 0.274);
+}
+.container-fluid .title{
+    display: inline-flex;
+    text-align: center;
+    margin-top: 100px;
+}
+.container-fluid .title p {
+    color:black;
+    margin-left: 3px;
+}
+.container-fluid .methoddelivery{
+    display: inline-flex; 
+}
+.container-fluid .methoddelivery .method_two{
+    margin-left: 100px;
+}
+.methoddelivery a{
+    text-decoration: none;
+    color:black;
+}
+.y_address input{
+    width:500px;
+    padding-bottom: 5px;
+    color:blue
+}
+.enthusiation{
+    margin-top: 30px;
+}
+.enthusiation button{
+    background-color: blue;
+    border-color: blue;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius: 20px;
+    color:white;
+}
+.enthusiation button a{
+    text-decoration: none;
+    color:white;
+}
