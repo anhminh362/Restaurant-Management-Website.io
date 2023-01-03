@@ -1,0 +1,100 @@
+.cate-layout{
+    font-size: 18px;
+}
+
+.cate-layout{
+    margin-top: 20px;
+    
+}
+
+.pot-item-content{
+    margin: 5%;
+    position: relative;
+  
+}
+
+.el-row{
+    position: relative;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
+.max-with-1200{
+    max-width: 1200px;
+    width: 92%;
+    margin-top: 20px;
+    
+}
+.el-col-sm-8{
+ float: left;
+ width: 33.33333%;
+ display: flex  ;
+}
+h2{
+    position: absolute;
+    top: 30px;
+    left: 1em;
+    color: #fff;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAsCAYAAADvjwGMAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAALGSURBVFiFxdhNiNVVGMfxz1x00pqw1NIyQrBSRMhQCCkoK8sIUrNFixYl4gvhqnIXEdLKnYhCULiwCFoUtIgWQdE7BAlqLWosR6OkScEMQ7Rfi3MvM6N3xjvDnTkPPPCH8/bl/M95nvP8epKYoM3EA7gPd+MOzEcfpmMQp/ArDuELfIp/R5uwZwIwq7EFjzcX+Qzf42f8hnO4iLmY14RcgftxDz7CG02wkYsn6dTXJvkuyQ9JtieZO46xLZ+dZFuSw825Hhve3skE85J8kOSnJE8l6ZkARDtfn+RokveTLOgE5pEkvyd5PUlvlyCG+/QkrzXXWDNWx63NTg9OAkRbH61hR5JfkiyaKpDRYNYnGUiycCpB2sEsSfJnkpVTDZJkRJyZhq9wAPvGG3y6YY1h31twFvtrgDAUgWfiGNbgSC2Y1s48i29rgjAE8wL21AShwNyJm5XEVdUaeBQf4r/KLBpYha9rg1BgluJwbRAKzO0YqA1CiTNBT20QRkbg6tbA37i+NggFZhC31AahwPyIu2qDUGAO4d7aIBSYT/BwbRDK1e7FSaXQOlETpoELeFd5XFW11uNqEb5UDvLZWjCtoNev1MA7a4EwsvCfryTMh1RKnMPTwR94GW/j2how7SSRA7gOz+BSbZhe5fwMYJPLNZRJtHZZ+wKexG14T9mlajDwD57AeXyOZVNC00ENvDnJqSSvJumbhBp7RZITSTZ3OmBBkoNJTibZmWROl0A2JBlM8nQ7FeJqvizJm0n+SpHWNiVZnPFLa9ck2Z2kP8nydirEeGwW1mGtUurciOPKDTyvPNi+wUFX1mPL8ZaSlJ/H6VbDRGEut9mGKtMZiuz6nKL9vtjscwN2YSNewjtXzDIJB7LltyY5k2RWkldS9MG9SW4abcy0bmzLGLvVp4jVHyuidP9YA7r1m9rZbiWA7lceb1e1/wFA0xdMzqPXQgAAAABJRU5ErkJggg==) no-repeat 0 0;
+    background-size: auto 100%;
+    line-height: 1.2;
+    padding: 0.5em 0 0.7em 1em;
+    font-size: 1em !important;
+}
+.tip-img{
+    color: #888;
+    font-size: 18px;
+    line-height: 18px;
+    margin-left: 1.5%;
+    font-weight: 500;
+}
+
+img.pot-img{
+    display: block;
+    width: 360px;
+    height: 493px;
+
+}
+.cate-layout .max-with-1200{
+   margin-left: 180px;
+   margin-right: 180px;
+   
+}
+ /* menu */
+.cate-menu{
+    position: fixed;
+    top: 150px;
+    padding-left: 14px;
+    cursor: pointer;
+    
+}
+.content{
+    background: hsla(0,0%,100%,.85);
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 4px 6px #ccc;
+    margin-top: 12px;
+
+}
+
+.cate-menu :hover{
+    color: #e60012;
+}
+
+
+img.icon{
+    margin-top: 10px;
+    width: 28px;
+    height: 28px;
+    margin-left: 2px;
+}
+p{
+    font-size: 12px;
+    color: #333;
+ 
+}
