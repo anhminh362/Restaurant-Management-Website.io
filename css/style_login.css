@@ -36,15 +36,16 @@ body{
 }
 .content{
     width: 100%;
-    background: rgb(153, 152, 152);
+   
     height: 590px;
 }
 .contentform{
+    
     width: 600px;
     height: 550px;
-    background: rgb(228, 224, 224);
+    /* background: rgb(228, 224, 224); */
     margin-left: 330px;
-    position: absolute;
+    /* position: absolute; */
     top: 100px;
     border-radius: 15px;
 } 
@@ -100,7 +101,7 @@ body{
     height: 36px;
     background: #081B60;
     border-radius: 40px;
-    margin-left: 185px;
+    margin-left: 200px;
     color:#FFFFFF;
 }
 .or{
