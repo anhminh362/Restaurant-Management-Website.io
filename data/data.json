@@ -30,7 +30,7 @@
                 {   
                     "type":"appetizer",
                     "id": 1,
-                    "status":"ok",
+                    "status":true,
                     "name": "Salad hawaii",
                     "price": 150000,
                     "desc": "Phô mai Mozzarella, Grano Padano, Camembert và phô mai xanh",
@@ -40,7 +40,7 @@
                 {
                     "type":"drink",
                     "id": 2,
-                    "status":"ok",
+                    "status":true,
                     "name": "Heineken",
                     "promotion":"0%",
                     "price": 15000,
