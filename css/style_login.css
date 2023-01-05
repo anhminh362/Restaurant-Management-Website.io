@@ -51,13 +51,17 @@ body{
 } 
 .contenth4{
     margin-top: 20px;
-    font-family: 'Inter';
+   
     font-style: normal;
     font-weight: 300;
     font-size: 32px;
     line-height: 32px;
     text-align: center;
-    color: #000000;
+   
+    color: #081B60;
+    font-family: "Nunito",sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
 }
 .contentinput{
     margin-top: 40px;
@@ -68,7 +72,7 @@ body{
     width: 450px;
     height: 35px;
     background: rgba(255, 255, 255, 0.18);
-    border: 1px solid #000000;
+    border: 1px solid #FEA116;
     border-radius: 15px;
     text-align: start;
     margin-left: 20px;
@@ -86,7 +90,7 @@ body{
     width: 41px;
     height: 15px;
     background: #D9D9D9;
-    border: 1px solid #000000;
+    border: 1px solid #FEA116;
     border-radius: 25px;
 }
 .inputtp1{
@@ -131,3 +135,12 @@ body{
     margin-left: 120px;
 }
 
+.content .button1:hover{
+    background:#FEA116;
+    color: #FFFFFF;
+}
+.content .bt1:hover{
+    background:#fff;
+    color:#FEA116;
+    border: 1px solid #fff;
+}
