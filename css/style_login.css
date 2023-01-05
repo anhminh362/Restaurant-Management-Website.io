@@ -130,3 +130,12 @@ body{
     margin-left: 120px;
 }
 
+.content .button1:hover{
+    background:#FEA116;
+    color: #FFFFFF;
+}
+.content .bt1:hover{
+    background:#fff;
+    color:#FEA116;
+    border: 1px solid #fff;
+}
