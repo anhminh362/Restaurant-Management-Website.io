@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="menuall.css">
+</head>
+
+<body >
+  <header>
+    <!-- place navbar here -->
+    <div class="container-fluid">
+    <!-- place navbar here -->
+    <div class="header">
+        <div class=" row banner">
+          <div class="nameres col-md-3">
+            <h1>YumYum</h1>
+          </div>
+          <div class=" col-md-6">
+          <div class="search">
+            <form action="/search" class="input-group  " >
+              <input type="text"  class="input-group-field auto-search form-control " required="Hãy nhập món đi!" placeholder="Tìm kiếm">
+              <span class="input-group-btn btn-action"  >
+                  <button type="submit"  class="btn text-white icon-fallback-text h-100" >	
+                      <i href="#" class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+              </span>
+            </form>       
+          </div>
+          </div>
+          <div class=" col-md-3">
+            <svg href="#" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <nav class="nav-container">
+        <div class="header-container flex justify-end">
+          <ul>
+            <li class="items-center " href="#">
+              <p href="#">Pizza 4Ps eGift-voucher</p>
+            </li>
+            <div class="verticalLine">
+            </div>
+            <li class="items-center" href="#">
+              <p href="#">Chính sách giao hàng</p>
+            </li>
+            <div class="verticalLine">
+            </div>
+            <li class="items-center"href="#">
+              <p href="#">Chính sách đổi trả và hoàn tiền</p>
+            </li>
+            <div class="verticalLine">
+            </div>
+            <li class="items-center" href="#">
+              <p href="#">  Đường dây nóng: <a>19006043</a></p>
+            </li>
+            <li class="items-center account " href="#">
+              <p class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="fa-regular fa-face-smile"></i> Tài khoản <i class="fa-sharp fa-solid fa-caret-down"></i></p>
+                <!-- Button trigger modal -->
+                <!-- Modal -->
+                <div style="width:500px; margin-left:800px; margin-top:100px;" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Chào mừng bạn đến với YumYum</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <center>
+                        <div class="modal-body">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Đăng ký</button>
+                          <button type="button" class="btn btn-secondary">Đăng nhập</button>
+                          <br>
+                          <br>
+                          <p><i class="fa-solid fa-face-smile"></i>Thông tin cá nhân</p>
+                          <p><i class="fa-solid fa-location-dot"></i>Địa chỉ của tôi</p>
+                          <p><i class="fa-duotone fa-rectangle-vertical-history"></i>Lịch sử đặt hàng</p>
+                        </div>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="mt-3">
+        <div class="navigate">
+            <div class="flex items-center">
+              <h2><a href="http://127.0.0.1:5500/menuorder/menuorder.html" >Trang chủ</a></h2>
+            </div>
+            <div class="lookall items-center">
+              <h2 href="#">Phổ biến</h2>
+            </div>
+        </div>
+        <div class="popular-food">
+          <div class="row" id="demo">
+            <div class="col-md-12"></div>
+          </div>
+        </div>
+    </div>
+    <script src="menudata.js"></script>
+    <script src="menuprocess.js"></script>
+    <script>listLocal()</script>
+  </header>
+  <main>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  
+</body>
+
+</html>

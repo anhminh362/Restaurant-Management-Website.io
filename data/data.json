@@ -1,0 +1,110 @@
+{
+    "Account": [
+        {   
+            "id": 1,
+            "createAt":"2022/12/02",
+            "updatedAt":"",
+            "isActive":true,
+            "isAdmin": true,
+            "userName": "ABC",
+            "passWord": 123,
+            "avatar":"https://ss-images.saostar.vn/wp700/pc/1617160792140/saostar-ad0lx1k2h7n0blgh.jpg",
+            "mail":"minh@gmail.com",
+            "phone":"091422502"
+        },
+        {   
+            "id": 2,
+            "createAt":"2021/11/02",
+            "updatedAt":"2022/03/03",
+            "isActive":true,
+            "isAdmin": false,
+            "userName": "BDF",
+            "passWord": 123,
+            "avatar":"https://toplist.vn/images/800px/studio-anh-khoa-792817.jpg",
+            "mail":"di@gmail.com",
+            "phone":"0918336029"
+        }
+    ],
+    "Products": [
+        
+                {   
+                    "type":"appetizer",
+                    "id": 1,
+                    "status":true,
+                    "name": "Salad hawaii",
+                    "price": 150000,
+                    "desc": "Phô mai Mozzarella, Grano Padano, Camembert và phô mai xanh",
+                    "promotion":"90%",
+                    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCo2kMa6BEXr9GaP7lvu9vugKv-6lj2LSc_wU0lV7rEA&s"
+                },
+                {
+                    "type":"drink",
+                    "id": 2,
+                    "status":true,
+                    "name": "Heineken",
+                    "promotion":"0%",
+                    "price": 15000,
+                    "desc": "Bia heineken không cồn",
+                    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCo2kMa6BEXr9GaP7lvu9vugKv-6lj2LSc_wU0lV7rEA&s"
+                
+                }
+        
+    ],
+    "Orders": [
+        {
+            "UserInfo":{
+                "UserInfoID":1
+            },
+            "idOrder": 1,
+            "products": 
+                {
+                    "id": 1
+                },
+            "originalPrice":200000,
+            "promotionPrice":100000,
+            "totalPrice": 100000,
+            "datetime": "10:02:45 2023/01/12",
+            "isdelivery":true
+        }
+    ],
+    "Info":{
+        "name": "YumYum Restaurant",
+        "email": "hello@yumyumrestaurant.com",
+        "tel":"(+84) 915 570 479",
+        "address":"99 To Hien Thanh, Son Tra, Da Nang",
+        "fanpage":"https://www.facebook.com/quochuu.tran.777"
+    },
+    "Table":[
+        {
+            "id":1,
+            "type":"single",
+            "quantity":3
+        },
+        {
+            "id":2,
+            "type":"twins",
+            "quantity":2
+        },
+        {
+            "id":3,
+            "type":"group",
+            "quantity":5
+        },
+        {
+            "id":4,
+            "type":"family",
+            "quantity":3
+        }
+    ],
+    "UserInfo":[
+        {
+            "Account":{
+                "id":1,
+                "isAdmin": false
+            },
+            "UserInfoID":1,
+            "Tel":"0912 255 723",
+            "Address":"101B Lê Hữu Trác, Sơn Trà, Đà Nẵng"
+        }
+    ]
+}
