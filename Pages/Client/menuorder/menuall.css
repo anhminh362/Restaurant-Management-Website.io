@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.container-fluid{
+    display: grid;
+    background-color: rgb(243, 243, 200) ;
+}
+header{
+    height: 60px;
+    margin-right: 0px;
+    margin-left: 0px;
+    
+}
+
+.banner{
+    width:auto;
+    margin-top: 0px;
+    height: 60px;
+    background-color: blue;
+    display: flex;
+    margin-left: -15px;
+}
+.header .banner h1{
+   margin-bottom: center;
+    color:rgb(243, 243, 200);
+    display: flex;
+    margin-left: 0px;
+    margin-left: 50px;
+}
+.search{
+    position: relative;
+}
+.header .input-group{
+    background-color: rgb(243, 243, 200);
+    padding:5px;
+    margin-top: 6px;
+    border-radius: 15px;
+    width:400px;
+    margin-left: 70px;
+}
+.input-group-field{
+    background-color: rgb(243, 243, 200);
+    border:0px solid;
+}
+.input-group-btn i{
+    color:black;
+}
+.banner .col-md-3 svg{
+    color:rgb(243, 243, 200);
+    margin-top: 6px ;
+    width:40px;
+    height:40px;
+    margin-left:125px;
+}
+.input-group-field{
+    background-color: rgb(243, 243, 200);
+    border:0px solid;
+}
+.input-group-btn i{
+    color:black;
+}
+.banner .col-md-3 svg{
+    color:rgb(243, 243, 200);
+    margin-top: 6px ;
+    width:40px;
+    height:40px;
+    margin-left:125px;
+}
+.nav-container{
+    height: 1,5rem;
+    margin-left: 0px;
+    background-color: white;
+
+}
+.header-container ul{
+    display:flex;
+}
+.nav-container .header-container  p{
+    margin-left: 10px;
+    font-size: medium;
+}
+.nav-container .header-container  p a{
+    color:red;
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+p, ul {
+    margin: 0;
+}
+ol, ul {
+    list-style: none;
+}
+.verticalLine {
+    border-left: 1px solid #000000;
+    margin-left: 10px;
+}
+.account{
+    margin-left: 200px;
+}
+.mt-3{
+    margin-top: 32px;
+    margin-left: 80px;
+    margin-right: 80px;
+    width: auto;
+    height:auto;
+}
+.mt-3 .navigate{
+    display:flex;
+}
+.mt-3 .navigate  h2 a{
+    font-size: 15px;
+    text-decoration: none;
+    color:#000000;
+}
+.mt-3 .lookall{
+    margin-left: 30%;
+
+}
+.mt-3 .lookall h2 {
+    font-size: 30px;
+    color:blue;
+}
+
+.mt-3 .popular-food .row .col-md-12{
+    display: flex;
+}
