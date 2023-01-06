@@ -30,7 +30,7 @@ body{
     line-height: 32px;
     text-align: center;
     
-    color: #081B60;
+    color: #FEA116;
     font-family: "Nunito",sans-serif;
     font-weight: 800;
     line-height: 1.2;
@@ -80,7 +80,7 @@ body{
 }
 .inputpwa{
     color:#000000;
-    padding-right: 100px;
+    padding-right: auto;
 }
 .bt1{
     width: 206px;
