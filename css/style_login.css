@@ -68,7 +68,8 @@ body{
     margin-left: 50px;
     margin-right: 80px;
 }
-.contentinput1{
+
+.input-login-email{
     width: 450px;
     height: 35px;
     background: rgba(255, 255, 255, 0.18);
@@ -77,6 +78,19 @@ body{
     text-align: start;
     margin-left: 20px;
 }
+
+.input-login-password{
+    width: 450px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid #FEA116;
+    border-radius: 15px;
+    text-align: start;
+    margin-left: 20px;
+}
+
+
+
 .inputpw{
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -100,7 +114,7 @@ body{
     border: 1px solid #000000;
     border-radius: 20px;
 }
-.bt1{
+.login__signInButton{
     width: 206px;
     height: 36px;
     background: #081B60;
@@ -123,7 +137,7 @@ body{
 }
 .oror{
     margin-left: 35px;
-   
+    text-align: center;
    
 }
 
@@ -133,7 +147,7 @@ body{
     background: rgba(255, 255, 255, 0.18);
     border: 1px solid #000000;
     border-radius: 30px;
-    margin-left: 120px;
+    margin-left: 136px;;
 }
 
 .content .button1:hover{
