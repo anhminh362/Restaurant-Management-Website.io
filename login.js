@@ -1,5 +1,12 @@
 let apiUser = "https://63aa9ccd7d7edb3ae62c214e.mockapi.io/User";
 
+const account_login = window.localStorage.getItem('account');
+
+if(account_login){
+  document.getElementById("login_button").innerHTML = '<a href="login.html" style="margin-right: 10px;" class="btn btn-primary py-2 px-4">logout</a>';
+}else{
+  document.getElementById("login_button").innerHTML = '<a href="login.html" style="margin-right: 10px;" class="btn btn-primary py-2 px-4">login</a>';
+}
 //login
 const email = document.querySelector(".input-login-email");
 const password = document.querySelector(".input-login-password");
@@ -18,15 +25,21 @@ bntLogin.addEventListener("click", (e) => {
   e.preventDefault();
   if (email.value == "" || password.value == "") {
     alert("Please enter your email and password");
-  } else {
+  } else if (email.value == "yumyum@gmail.com" && password.value == "123456789") {
+    window.localStorage.setItem('account', "admin");
+    alert('Welcome admin ...');
+    window.location.assign('Pages/Admin/index.html');
+  }
+  else {
     getUser().then((data) => {
       const user = data.find(
         (user) =>
           user.email == email.value && user.password == password.value
       );
       if (user) {
+        window.localStorage.setItem('account', user.email);
         alert("Login success");
-        window.location.href = "http://127.0.0.1:5501/index.html";
+        window.location.href = "index.html";
       } else {
         alert("Login failed");
       }
