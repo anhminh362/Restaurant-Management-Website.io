@@ -2,16 +2,18 @@ let apiUser = "https://63aa9ccd7d7edb3ae62c214e.mockapi.io/User";
 
 const account_login = window.localStorage.getItem('account');
 
-if(account_login){
-  document.getElementById("login_button").innerHTML = '<a href="login.html" style="margin-right: 10px;" class="btn btn-primary py-2 px-4">logout</a>';
-}else{
+if (account_login) {
+  document.getElementById("login_button").innerHTML = '<a id="logoutBtn" onclick="handleLogout()" style="margin-right: 10px;" class="btn btn-primary py-2 px-4">logout</a>';
+} else {
   document.getElementById("login_button").innerHTML = '<a href="login.html" style="margin-right: 10px;" class="btn btn-primary py-2 px-4">login</a>';
 }
+
 //login
 const email = document.querySelector(".input-login-email");
 const password = document.querySelector(".input-login-password");
 const name = document.querySelector(".input-signup-name");
 const bntLogin = document.querySelector(".login__signInButton");
+const bntLogout = document.querySelector("#logoutBtn");
 
 // get user
 const getUser = async () => {
@@ -20,8 +22,13 @@ const getUser = async () => {
   return data;
 };
 
+const handleLogout = () => {
+  localStorage.removeItem('account');
+  window.location.reload();
+}
+
 // login
-bntLogin.addEventListener("click", (e) => {
+const handleLogin = (e) => {
   e.preventDefault();
   if (email.value == "" || password.value == "") {
     alert("Please enter your email and password");
@@ -38,11 +45,11 @@ bntLogin.addEventListener("click", (e) => {
       );
       if (user) {
         window.localStorage.setItem('account', user.email);
-        alert("Login success");
+        alert("Login successfully");
         window.location.href = "index.html";
       } else {
         alert("Login failed");
       }
     });
   }
-});
+};
