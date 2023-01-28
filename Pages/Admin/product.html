@@ -12,6 +12,7 @@
         href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
     <link rel="stylesheet" href="./style.css">
     <link rel='shortcut icon' href='../../asset/picture/icon_website.png' />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -148,7 +149,7 @@
                             <i class="zmdi zmdi-download"></i>
                         </header>
                         <a href="add_product.html" >ADD NEW PRODUCT</a>
-                        <table class="projects-table">
+                        <table class="projects-table" id="product">
                             <thead>
                                 <tr>
                                     <th>Project</th>
@@ -159,7 +160,8 @@
                                     <th class="text-right">Actions</th>
                                 </tr>
                             </thead>
-                            <tr>
+
+                            <!-- <tr>
                                 <td>
                                     <p>New Dashboard</p>
                                     <p>Google</p>
@@ -333,7 +335,7 @@
                                         </select>
                                     </form>
                                 </td>
-                            </tr>
+                            </tr> -->
                         </table>
                     </div>
                 </div>
@@ -347,7 +349,7 @@
     <script src='https://cdn.jsdelivr.net/jquery.selectric/1.10.1/jquery.selectric.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js'></script>
     <script src="./script.js"></script>
-
+    <script src="product.js"></script>
 </body>
 
 </html>
