@@ -272,3 +272,10 @@ figure {
   line-height: 1;
   vertical-align: middle;
 }
+.member-info p {
+  white-space: nowrap; 
+  width: 150px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+
+}

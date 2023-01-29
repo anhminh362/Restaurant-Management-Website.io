@@ -37,8 +37,7 @@ function show() {
       html +='<td>'+'<form class="form" action="#" method="POST"><select class="action-box"><option>Actions</option><option>Update</option><option>Delete</option></select></form></td>'
       html += "</tr>";
     }
-
-
+    
 
     document.getElementById("product").innerHTML = html;
   });
