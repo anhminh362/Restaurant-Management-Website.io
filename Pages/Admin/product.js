@@ -4,13 +4,13 @@
 //   var lenData = callAPI("Products", "get", null).then((res) => {var product = res.data; });
 //   var id = lenData;
 //   console.log(id);
-//   var name = document.frm.txt_name.value;
-//   var avatar = document.frm.txt_img.value;
-//   var price = document.frm.txt_price.value;
-//   var detail = document.frm.txt_detail.value;
+//   var name = document.frm.name.value;
+//   var img = document.frm.img.value;
+//   var price = document.frm.price.value;
+//   var detail = document.frm.desc.value;
 //   var OneProduct = {
 //     name: name,
-//     avatar: avatar,
+//     img: img,
 //     price: price,
 //     detail: detail,
 //   };
