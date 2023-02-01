@@ -12,6 +12,7 @@
         href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
     <link rel="stylesheet" href="./style.css">
     <link rel='shortcut icon' href='../../asset/picture/icon_website.png' />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -43,7 +44,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="product.html">
+                            <a class="nav-link " href="product.html">
                                 <i class="zmdi zmdi-shopping-cart"></i>
                                 Products
                             </a>
@@ -67,7 +68,6 @@
                             </a>
                         </li>
                     </ul>
-
 
                     <h6
                         class="sidebar-heading d-flex justify-content-between align-items-center pl-3 mt-4 mb-1 text-muted">
@@ -148,198 +148,143 @@
                             <div class="count">| 32 Projects</div>
                             <i class="zmdi zmdi-download"></i>
                         </header>
-                        <table class="projects-table">
+                        <button type="button" class="btn btn-warning" ><a href="add_product.html">ADD NEW ACCOUNT</a></button>
+                        <table class="projects-table" >
                             <thead>
                                 <tr>
-                                    <th>Project</th>
-                                    <th>Deadline</th>
-                                    <th>Leader + Team</th>
-                                    <th>Budget</th>
-                                    <th>Status</th>
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Password </th>
+                                    <th>Username</th>
+
                                     <th class="text-right">Actions</th>
                                 </tr>
                             </thead>
-                            <tr>
-                                <td>
-                                    <p>New Dashboard</p>
-                                    <p>Google</p>
-                                </td>
-                                <td>
-                                    <p>17th Oct, 15</p>
-                                    <p class="text-danger">Overdue</p>
-                                </td>
-                                <td class="member">
-                                    <figure><img
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" />
-                                    </figure>
-                                    <div class="member-info">
-                                        <p>Myrtle Erickson</p>
-                                        <p>UK Design Team</p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <p>$4,670</p>
-                                    <p>Paid</p>
-                                </td>
-                                <td class="status">
-                                    <span class="status-text status-orange">In progress</span>
-                                </td>
-                                <td>
-                                    <form class="form" action="#" method="POST">
-                                        <select class="action-box">
-                                            <option>Actions</option>
-                                            <option>Update</option>
-                                            <option>Delete</option>
-                                        </select>
-                                    </form>
-                                </td>
-                            </tr>
-                            <tr class="danger-item">
-                                <td>
-                                    <p>New Dashboard</p>
-                                    <p>Google</p>
-                                </td>
-                                <td>
-                                    <p>17th Oct, 15</p>
-                                    <p class="text-danger">Overdue</p>
-                                </td>
-                                <td class="member">
-                                    <figure><img
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" />
-                                    </figure>
-                                    <div class="member-info">
-                                        <p>Myrtle Erickson</p>
-                                        <p>UK Design Team</p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <p>$4,670</p>
-                                    <p>Paid</p>
-                                </td>
-                                <td class="status">
-                                    <span class="status-text status-red">Blocked</span>
-                                </td>
-                                <td>
-                                    <form class="form" action="#" method="POST">
-                                        <select class="action-box">
-                                            <option>Actions</option>
-                                            <option>Update</option>
-                                            <option>Delete</option>
-                                        </select>
-                                    </form>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>New Dashboard</p>
-                                    <p>Google</p>
-                                </td>
-                                <td>
-                                    <p>17th Oct, 15</p>
-                                    <p class="text-danger">Overdue</p>
-                                </td>
-                                <td class="member">
-                                    <figure><img
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" />
-                                    </figure>
-                                    <div class="member-info">
-                                        <p>Myrtle Erickson</p>
-                                        <p>UK Design Team</p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <p>$4,670</p>
-                                    <p>Paid</p>
-                                </td>
-                                <td class="status">
-                                    <span class="status-text status-orange">In progress</span>
-                                </td>
-                                <td>
-                                    <form class="form" action="#" method="POST">
-                                        <select class="action-box">
-                                            <option>Actions</option>
-                                            <option>Update</option>
-                                            <option>Delete</option>
-                                        </select>
-                                    </form>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>New Dashboard</p>
-                                    <p>Google</p>
-                                </td>
-                                <td>
-                                    <p>17th Oct, 15</p>
-                                    <p class="text-danger">Overdue</p>
-                                </td>
-                                <td class="member">
-                                    <figure><img
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" />
-                                    </figure>
-                                    <div class="member-info">
-                                        <p>Myrtle Erickson</p>
-                                        <p>UK Design Team</p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <p>$4,670</p>
-                                    <p>Paid</p>
-                                </td>
-                                <td class="status">
-                                    <span class="status-text status-blue">Early stages</span>
-                                </td>
-                                <td>
-                                    <form class="form" action="#" method="POST">
-                                        <select class="action-box">
-                                            <option>Actions</option>
-                                            <option>Update</option>
-                                            <option>Delete</option>
-                                        </select>
-                                    </form>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>New Dashboard</p>
-                                    <p>Google</p>
-                                </td>
-                                <td>
-                                    <p>17th Oct, 15</p>
-                                    <p class="text-danger">Overdue</p>
-                                </td>
-                                <td class="member">
-                                    <figure><img
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" />
-                                    </figure>
-                                    <div class="member-info">
-                                        <p>Myrtle Erickson</p>
-                                        <p>UK Design Team</p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <p>$4,670</p>
-                                    <p>Paid</p>
-                                </td>
-                                <td class="status">
-                                    <span class="status-text status-orange">In progress</span>
-                                </td>
-                                <td>
-                                    <form class="form" action="#" method="POST">
-                                        <select class="action-box">
-                                            <option>Actions</option>
-                                            <option>Update</option>
-                                            <option>Delete</option>
-                                        </select>
-                                    </form>
-                                </td>
-                            </tr>
+                            <tbody id="product"></tbody>
+
+                            
                         </table>
                     </div>
                 </div>
             </main>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Update Product
+                 <!-- <br> ID: <span id="ID"></span> -->
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div>
+            
+            </div>
+            <div class="modal-body">
+                <form action="" class="tm-edit-product-form" name="frm">
+                    <div class="form-group mb-3">
+                      <label
+                        for="id"
+                        >ID
+                      </label>
+                      <input
+                        id="id"
+                        name="id"
+                        type="text"
+                        class="form-control validate"
+                        required
+                      />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label
+                          for="name"
+                          >Product Name
+                        </label>
+                        <input
+                          id="name"
+                          name="name"
+                          type="text"
+                          class="form-control validate"
+                          required
+                        />
+                      </div>
+                    <div class="form-group mb-3">
+                      <label
+                        for="description"
+                        >Description</label
+                      >
+                      <textarea
+                        id="desc"
+                        class="form-control validate"
+                        rows="3"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label
+                        for="category"
+                        >Category</label
+                      >
+                      <select
+                        class="custom-select tm-select-accounts"
+                        id="category"
+                      >
+                        <option selected>Select category</option>
+                        <option value="tap-1">Breakfast</option>
+                        <option value="tap-2">Lunch</option>
+                        <option value="tap-3">Dinner</option>
+                      </select>
+                    </div>
+                    <div class="row">
+                        <div class="form-group mb-3 col-xs-12 col-sm-6">
+                            <label
+                              for="price"
+                              >Price
+                            </label>
+                            <input
+                              id="price"
+                              name="price"
+                              type="text"
+                              class="form-control validate"
+                              data-large-mode="true"
+                            />
+                          </div>
+                          
+                    </div>
+                    
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
+                  <div class="tm-product-img-dummy mx-auto">
+                    <i
+                      class="fas fa-cloud-upload-alt tm-upload-icon"
+                      onclick="document.getElementById('fileInput').click();"
+                    ></i>
+                  </div>
+                  <div class="custom-file mt-3 mb-3">
+                    <input id="fileInput" type="file" style="display:none;" />
+                    <input
+                      type="button"
+                      class="btn btn-primary btn-block mx-auto"
+                      value="UPLOAD PRODUCT IMAGE"
+                      onclick="document.getElementById('fileInput').click();"
+                    />
+                  </div>
+                </div>
+                <div class="col-12" id="aaa">
+                    <button type="button" class="btn btn-primary btn-block text-uppercase" onclick="editt()">Update</button><br>
+                </div>
+              </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
@@ -347,7 +292,7 @@
     <script src='https://cdn.jsdelivr.net/jquery.selectric/1.10.1/jquery.selectric.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js'></script>
     <script src="./script.js"></script>
-
+    <script src="account.js"></script>
 </body>
 
 </html>
