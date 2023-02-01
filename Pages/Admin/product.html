@@ -154,10 +154,12 @@
                                 <tr>
                                     <th>Id</th>
                                     <th>Name</th>
+                                    <th>Image</th>
                                     <th>Description</th>
                                     <th>Price</th>
+                                    <th>Promotion</th>
                                     <th>Status</th>
-                                    <th class="text-right">Actions</th>
+                                    <th class="tdCenter">Actions</th>
                                 </tr>
                             </thead>
                             <tbody id="product"></tbody>
@@ -189,16 +191,14 @@
             <div class="modal-body">
                 <form action="" class="tm-edit-product-form" name="frm">
                     <div class="form-group mb-3">
-                      <label
-                        for="id"
-                        >ID
-                      </label>
+                      
                       <input
                         id="id"
                         name="id"
                         type="text"
                         class="form-control validate"
                         required
+                       style="display: none;"
                       />
                     </div>
                     <div class="form-group mb-3">
@@ -214,6 +214,33 @@
                           required
                         />
                       </div>
+                    <div class="form-group mb-3">
+                        <!-- <label
+                          for="img"
+                          >Image
+                        </label>
+                        <input
+                          id="img"
+                          name="img"
+                          type="text"
+                          class="form-control validate"
+                          required
+                        /> -->
+                      </div>
+                      <div id="image" class="picture"></div><br>
+                    <!-- <div class="form-group mb-3">
+                        <label
+                          for="status"
+                          >Status
+                        </label>
+                        <input
+                          id="status"
+                          name="status"
+                          type="text"
+                          class="form-control validate"
+                          required
+                        />
+                      </div> -->
                     <div class="form-group mb-3">
                       <label
                         for="description"
@@ -255,17 +282,32 @@
                               data-large-mode="true"
                             />
                           </div>
-                          
+                          <div class="form-group mb-3 col-xs-12 col-sm-6">
+                            <label
+                              for="promotion"
+                              >Promotion
+                            </label>
+                            <input
+                              id="promotion"
+                              name="promotion"
+                              type="text"
+                              class="form-control validate"
+                              data-large-mode="true"
+                            />
+                          </div>
+                        
                     </div>
                     
+                    
                 </div>
+                
                 <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
-                  <div class="tm-product-img-dummy mx-auto">
+                  <!-- <div class="tm-product-img-dummy mx-auto">
                     <i
                       class="fas fa-cloud-upload-alt tm-upload-icon"
                       onclick="document.getElementById('fileInput').click();"
                     ></i>
-                  </div>
+                  </div> -->
                   <div class="custom-file mt-3 mb-3">
                     <input id="fileInput" type="file" style="display:none;" />
                     <input
