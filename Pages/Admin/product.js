@@ -174,9 +174,9 @@ function block(id){
       console.log(error);
     });
     alert("Done!");
-    setTimeout(() => {
+    
       window.location.reload(false);
-    }, 1000);
+   
     }
 
 
@@ -194,9 +194,9 @@ function active(id){
       console.log(error);
     });
     alert("Done!");
-    setTimeout(() => {
+    
       window.location.reload(false);
-    }, 1000);
+   
     }
     
 function editt() {
@@ -224,8 +224,8 @@ let image = img.split("\\")[2];
   console.log(error);
 });
 alert("Done!");
-setTimeout(() => {
+// setTimeout(() => {
   window.location.reload(false);
-}, 1000);
+// }, 1000);
   
 }
