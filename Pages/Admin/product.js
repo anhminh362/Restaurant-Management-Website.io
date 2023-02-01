@@ -1,23 +1,6 @@
 
 
-// function post() {
-//   var lenData = callAPI("Products", "get", null).then((res) => {var product = res.data; });
-//   var id = lenData;
-//   console.log(id);
-//   var name = document.frm.name.value;
-//   var img = document.frm.img.value;
-//   var price = document.frm.price.value;
-//   var detail = document.frm.desc.value;
-//   var OneProduct = {
-//     name: name,
-//     img: img,
-//     price: price,
-//     detail: detail,
-//   };
-//   console.log(OneProduct);
-//   callAPI("Products", "post", OneProduct).catch((err) => {console.log(err)});
-//   show();
-// }
+
 
 function show() {
   
@@ -34,7 +17,24 @@ function show() {
       html +='<td class="member"> <figure><img src="' +Product[i].img +'"/></figure><div class="member-info"><p>'+Product[i].name+'</p><p>'+Product[i].desc+'</p></div></td>';
       html += '<td><p>' + Product[i].price + '</p>'+"</td>";
       html += '<td class="status">' + '<span class="status-text status-orange">In progress</span>'+ "</td>";
-      html +='<td>'+'<form class="form" action="#" method="POST"><select class="action-box"><option>Actions</option><option>Update</option><option>Delete</option></select></form></td>'
+
+
+      html +='<td>';
+      html+="<li class='nav-item dropdown'>"
+      html+='<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</a>'
+      html+='<div class="dropdown-menu" aria-labelledby="navbarDropdown">'
+      html+=`<button onClick="deletes(${Product[i].id})" class="dropdown-item" >DELETE</button>`
+      html+=`<button onClick="edit(${Product[i].id})" data-toggle="modal" data-target="#exampleModal" class="dropdown-item" >UPDATE</button>`
+
+      
+
+
+      // html+='<div class="dropdown-divider"></div>'
+      // html+='<a class="dropdown-item" href="#">Something else here</a>'
+      html+='</div>'
+      html+='</li>'
+      html+="</td>";
+      // html +='<td>'+`<form class="form" action="#" method="POST"><select class="action-box"><option>Actions</option><option>Update</option><option onClick="deletes(${Product[i].id})">Delete</option></select></form></td>`
       html += "</tr>";
     }
     
@@ -52,56 +52,118 @@ sendPostRequest();
 
 show()
 
+function post() {
+  var name = document.getElementById("name").value;
+  var detail = document.getElementById("desc").value;
+  var category = document.getElementById("category").value;
+  var price = document.getElementById("price").value;
+
+  console.log(name,detail,category,price);
+  // var img = document.getElementById("name").value;
+
+  var OneProduct = {
+    name: name,
+    desc:detail,
+    price: price,
+    type:category
+  };
+  console.log(OneProduct);
+  axios.post('https://63aa9d5d7d7edb3ae62c2f74.mockapi.io/Products', OneProduct)
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
+}
+
+
 // function deletes(id) {
 //     var r = confirm("Do you want to delete this product?");
 //     if (r == true) {
-//         callAPI(`Product/${id}`, "DELETE", null).then((response) => {
-//             show();
-//             alert("I'm sure!");
-//         });
+//       axios.delete(`https://63aa9d5d7d7edb3ae62c2f74.mockapi.io/Products/${id}`)
+//       .then(function (response) {
+//         console.log(response);
+//       })
+//       .catch(function (error) {
+//         console.log(error);
+//       });
+//       setTimeout(() => {
+//           window.location.reload(false);
+//       }, 1000);
+
+//       alert("I'm sure!");
+      
 //     } else {
 //         window.location.href = "mockdata.html";
 //     }
 // }
-// function edit(id) {
 
-//     callAPI(`Products/${id}`, "GET", null).then((res) => {
-//         let Product = [];
-//         Product = res.data;
-//         console.log(Product);
-//         document.getElementById("name").value = Product.name;
-//         document.getElementById("img").value = Product.avatar;
-//         document.getElementById("price").value = Product.price;
-//         document.getElementById("detail").value = Product.detail;
-//     });
-//     document.getElementById("editbutton").innerHTML = `<button type="button" onclick="editok(${id})" class=btn- btn-success"> Edit</button>`;
-// }
+function edit(id) {
+  var product;
+  axios.get('https://63aa9d5d7d7edb3ae62c2f74.mockapi.io/Products')
+  .then(function (response) {
+    product=response.data;
+    for(var i=0;i <= product.length;i++){
+      if(product[i].id==id){
+            document.getElementById("name").value=product[i].name;
+            document.getElementById("desc").value=product[i].desc;
+            document.getElementById("category").value=product[i].type;
+            document.getElementById("price").value=product[i].price;
+          }
+    }
+    
+  })
 
 
-// function editok(id) {
-//     var name = document.getElementById("name").value;
-//     var avatar = document.getElementById("img").value;
-//     var price = document.getElementById("price").value;
-//     var detail = document.getElementById("detail").value;
-//     var OneProduct = {
-//         id: id,
-//         name: name,
-//         avatar: avatar,
-//         price: price,
-//         detail: detail,
+    
 
-//     }
-//     callAPI(`Products/${id}`, "PUT", OneProduct).then((response) => {
-//         show();
-//         alert("ban da thanh cong!")
+  // var OneProduct = {
+  //   name: name,
+  //   desc:detail,
+  //   price: price,
+  //   type:category
+  // };
 
-//     })
-//     reset();
-// }
-// function reset() {
-//     document.getElementById("name").value = "";
-//     document.getElementById("img").value = "";
-//     document.getElementById("price").value = "";
-//     document.getElementById("detail").focus;
-// }
-// reset();
+  // axios.put(`https://63aa9d5d7d7edb3ae62c2f74.mockapi.io/Products`)
+  // .then(function (response) {
+  //   console.log(response);
+    
+  // })
+  // .catch(function (error) {
+  //   console.log(error);
+  // });
+  
+    // callAPI(`Products/${id}`, "GET", null).then((res) => {
+    //     let Product = [];
+    //     Product = res.data;
+    //     console.log(Product);
+    //     document.getElementById("name").value = Product.name;
+    //     document.getElementById("img").value = Product.avatar;
+    //     document.getElementById("price").value = Product.price;
+    //     document.getElementById("detail").value = Product.detail;
+    // });
+    // document.getElementById("editbutton").innerHTML = `<button type="button" onclick="editok(${id})" class=btn- btn-success"> Edit</button>`;
+}
+
+
+function editt(id) {
+    var name = document.getElementById("name").value;
+    var avatar = document.getElementById("img").value;
+    var price = document.getElementById("price").value;
+    var detail = document.getElementById("detail").value;
+    var OneProduct = {
+        id: id,
+        name: name,
+        avatar: avatar,
+        price: price,
+        detail: detail,
+
+    }
+    axios.get('https://63aa9d5d7d7edb3ae62c2f74.mockapi.io/Products')
+  .then(function (response) {
+
+  })
+    
+}
