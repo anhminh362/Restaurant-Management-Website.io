@@ -279,3 +279,6 @@ figure {
   text-overflow: ellipsis; 
 
 }
+.drop-down {
+  list-style: none;
+}
