@@ -41,22 +41,35 @@ function show() {
                     menu1 +='<img class="flex-shrink-0 img-fluid rounded" src="' +Product[i].img +'" alt="" style="width: 80px">';
                     menu1 += ' <div class="w-100 d-flex flex-column text-start ps-4">' 
                     menu1 += '<h5 class="d-flex justify-content-between border-bottom pb-2">' 
-                    menu1 +=' <span>'+Product[i].name+'</span>';
-                    menu1 +=' <span class="text-primary">'+Product[i].price+'</span>';
+                    
+                    menu1 +=' <div><span>'+Product[i].name+'</span></div>';
+                    menu1 +='<div class="d-flex"><span class="text-primary  mr-4">'+Product[i].price+'</span> '+
+                    `<button class="border-0 ml-2 bg-white">
+                    <span class="material-symbols-outlined">
+                     add_shopping_cart
+                    </span>
+                    </button></div>`;
                     menu1 += '</h5>';
                     menu1 += '<small class="fst-italic">'+Product[i].desc+'</small>';
                     menu1 += '</div>';
                     menu1 += '</div>';
                     menu1 += '</div>';
                 }
+                
                 else if (Product[i].type=="tap-2"){
                     menu2 += '<div class="col-lg-6">';
                     menu2 +='<div class="d-flex align-items-center">'
                     menu2 +='<img class="flex-shrink-0 img-fluid rounded" src="' +Product[i].img +'" alt="" style="width: 80px">';
                     menu2 += ' <div class="w-100 d-flex flex-column text-start ps-4">' 
                     menu2 += '<h5 class="d-flex justify-content-between border-bottom pb-2">' 
-                    menu2 +=' <span>'+Product[i].name+'</span>';
-                    menu2 +=' <span class="text-primary">'+Product[i].price+'</span>';
+                    
+                    menu2 +=' <div><span>'+Product[i].name+'</span></div>';
+                    menu2 +='<div class="d-flex"><span class="text-primary  mr-4">'+Product[i].price+'</span> '+
+                    `<button class="border-0 ml-2 bg-white">
+                    <span class="material-symbols-outlined">
+                     add_shopping_cart
+                    </span>
+                    </button></div>`;
                     menu2 += '</h5>';
                     menu2 += '<small class="fst-italic">'+Product[i].desc+'</small>';
                     menu2 += '</div>';
@@ -69,8 +82,14 @@ function show() {
                     menu3 +='<img class="flex-shrink-0 img-fluid rounded" src="' +Product[i].img +'" alt="" style="width: 80px">';
                     menu3 += ' <div class="w-100 d-flex flex-column text-start ps-4">' 
                     menu3 += '<h5 class="d-flex justify-content-between border-bottom pb-2">' 
-                    menu3 +=' <span>'+Product[i].name+'</span>';
-                    menu3 +=' <span class="text-primary">'+Product[i].price+'</span>';
+                    
+                    menu3 +=' <div><span>'+Product[i].name+'</span></div>';
+                    menu3 +='<div class="d-flex"><span class="text-primary  mr-4">'+Product[i].price+'</span> '+
+                    `<button class="border-0 ml-2 bg-white">
+                    <span class="material-symbols-outlined">
+                     add_shopping_cart
+                    </span>
+                    </button></div>`;
                     menu3 += '</h5>';
                     menu3 += '<small class="fst-italic">'+Product[i].desc+'</small>';
                     menu3 += '</div>';
