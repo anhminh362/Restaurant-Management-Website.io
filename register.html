@@ -19,6 +19,7 @@
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel='shortcut icon' href='./asset/picture/icon_website.png' />
 </head>
 <body>
     
@@ -60,8 +61,8 @@
                             </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
-                        <a href="login.htm" style="margin-right: 10px;" class="btn btn-primary py-2 px-4">login</a>
-                        <a href="register.htm" class="btn btn-primary py-2 px-4">Register</a>
+                                            <div id="login_button"></div>
+                        <a href="register.html" class="btn btn-primary py-2 px-4">Register</a>
                     </div>
                 </nav>
     
@@ -82,17 +83,17 @@
                 <form class="contentform">
                     <h4 class="contenth4">Register</h4>
                     <div class="contentinput">
-                        <input class="contentinput1" type="text" placeholder="   First name" id="name"> <br> <br>
-                        <input class="contentinput1"type="text" placeholder="    Last name" > <br> <br>
-                        <input  class="contentinput1"type="text" placeholder="    Email address" id="email"> <br> <br>
-                        <input class="contentinput1"type="text" placeholder="    Password" id="password">  <br> <br>
-                        <input class="contentinput1"type="text" placeholder="    Confirm password" id="passwords"> <br> <br>
-                        <input class="contentinput1" type="date" placeholder="     Date of birth"> <br> <br>
+                        <input style="padding-left:15px" class="contentinput1" type="text" placeholder="First name" id="name"> <br> <br>
+                        <input style="padding-left:15px" class="contentinput1"type="text" placeholder="Last name" > <br> <br>
+                        <input style="padding-left:15px" class="input-login-email"type="text" placeholder="Email address" id="email"> <br> <br>
+                        <input style="padding-left:15px" class="input-signup-password"type="text" placeholder="Password" id="password">  <br> <br>
+                        <input style="padding-left:15px" class="contentinput1"type="text" placeholder="Confirm password" id="passwords"> <br> <br>
+                        <input style="padding-left:15px;padding-right:15px" class="contentinput1" type="date" placeholder="Date of birth"> <br> <br>
                     </div>
                     <div class="inputpw">
                         <p id="forgotpassword">In order to register you agree to our</p><a class="inputpwa" href="#">Terms and Conditions </a> 
                     </div> <br> <br>
-                    <button  type="button" class="bt1">Register</button>
+                    <button  type="button" onclick="handleRegister(event)" class="signup__signInButton">Register</button>
                     <br>
                     <div class="or">
                         <h4 class="oror">-------------------</h4>
@@ -152,6 +153,7 @@
         </div>
     
     <!-- JavaScript Libraries -->
+    <script src="./register.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
@@ -163,7 +165,8 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <!-- Javascript -->
+                          <script src="js/main.js"></script><script src="./login.js"></script>
+
 </body>
 </html>

@@ -15,6 +15,9 @@
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel='shortcut icon' href='./asset/picture/icon_website.png' />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -56,8 +59,41 @@
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="login.htm" style="margin-right: 10px;" class="btn btn-primary py-2 px-4">login</a>
-                    <a href="register.htm" class="btn btn-primary py-2 px-4">Register</a>
+                                        <div id="login_button"></div>
+                    <a href="register.html" class="btn btn-primary py-2 px-4">Register</a>
+                    <div class="tool">
+                        <button id="cart">
+                          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                          Giỏ Hàng
+                        </button>
+                      <div id="myModal" class="modal">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title">Giỏ Hàng</h5>
+                                  <span class="close">&times;</span>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="cart-row">
+                                      <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                      <span class="cart-price cart-header cart-column">Giá</span>
+                                      <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                                  </div>
+                                  <div class="cart-items">
+                
+                                  </div>
+                                  <div class="cart-total">
+                                      <strong class="cart-total-title">Tổng Cộng:</strong>
+                                      <span class="cart-total-price">0VNĐ</span>
+                                  </div>
+                              </div>
+                
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger close-footer">Đóng</button>
+                                  <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
                 </div>
             </nav>
 
@@ -117,303 +153,18 @@
                     </ul>
                     <div class="tab-content">
                         <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2022-04-Sticky-rice-with-mango%20%2F_overhead2" alt="" style="width: 80px">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Sticky rice</span>
-                                                <span class="text-primary">$150</span>
-                                            </h5>
-                                            <small class="fst-italic">When I'm bored, I eat. When I'm happy, I eat...</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://bizweb.dktcdn.net/100/414/350/files/9-mi-xao-hai-san.jpg?v=1611830242786" alt="" style="width: 80px">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Seafood fried noodles</span>
-                                                <span class="text-primary">$135</span>
-                                            </h5>
-                                            <small class="fst-italic">Eat to live, Don't live to eat...</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://nauvaan.net/thumb/resize/w/1200/h/1200/z/1/data/uploads/avatar/mach-ban-bi-quyet-lam-mon-mi-xao-thap-cam-don-gian-ma-day-du-chat-dinh-duong.-2020-12-39-nau-va-an-.jpg" alt="" style="width: 80px">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Mixed fried noodles</span>
-                                                <span class="text-primary">$100</span>
-                                            </h5>
-                                            <small class="fst-italic">The only thing I like better than talking about food is eating...</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://luhanhvietnam.com.vn/du-lich/vnt_upload/news/04_2022/mon-xoi-viet-nam-1.jpg" alt="" style="width: 80px">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Five-spice sticky rice</span>
-                                                <span class="text-primary">$115</span>
-                                            </h5>
-                                            <small class="fst-italic">Let food be thy medicine and medicine be thy food...</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://toplist.vn/images/800px/banh-mi-bami-king-827767.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Hamburgers</span>
-                                                <span class="text-primary">$200</span>
-                                            </h5>
-                                            <small class="fst-italic">Eat good feel good. ...</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://static.toiimg.com/thumb/75356205.cms?imgsize=1503855&width=800&height=800" alt="" style="width: 80px">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Continent Cantonese Noodles</span>
-                                                <span class="text-primary">$139</span>
-                                            </h5>
-                                            <small class="fst-italic">I'm eating just in case i get hungry later...</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://www.assortedeats.com/wp-content/uploads/2022/03/Chinese-Red-Braised-Soybeans-Easy-Soybean-Recipe-Square.jpg" alt="" style="width: 80px">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Stewed soybeans</span>
-                                                <span class="text-primary">$180</span>
-                                            </h5>
-                                            <small class="fst-italic">Love is a grain of sand, because it is eaten to overwhelm love</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://boldandtasty.com/wp-content/uploads/2020/10/featured-pate.jpg" alt="" style="width: 80px">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Pate bread</span>
-                                                <span class="text-primary">$300</span>
-                                            </h5>
-                                            <small class="fst-italic">I'm afraid to eat it, it's just bad for my stomach and I'll die</small>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="row g-4" id="menu1">
+                                
                             </div>
                         </div>
                         <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://ussinavietnam.vn/wp-content/uploads/2021/03/nh%C3%A0-h%C3%A0ng-ngon-%E1%BB%9F-s%C3%A0i-g%C3%B2n-12-150x150.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Vegetable beef soup</span>
-                                                <span class="text-primary">$225</span>
-                                            </h5>
-                                            <small class="fst-italic">Love is a grain of sand, because it is eaten to overwhelm love</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://ussinavietnam.vn/wp-content/uploads/2021/03/nh%C3%A0-h%C3%A0ng-ngon-%E1%BB%9F-s%C3%A0i-g%C3%B2n-11-150x150.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Fried breaded beef</span>
-                                                <span class="text-primary">$285</span>
-                                            </h5>
-                                            <small class="fst-italic">I'm eating just in case i get hungry later...</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://ussinavietnam.vn/wp-content/uploads/2021/03/nh%C3%A0-h%C3%A0ng-ngon-%E1%BB%9F-s%C3%A0i-g%C3%B2n-15-150x150.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Seafood spaghetti</span>
-                                                <span class="text-primary">$245</span>
-                                            </h5>
-                                            <small class="fst-italic">I'm afraid to eat it, it's just bad for my stomach and I'll die</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://media-cdn-v2.laodong.vn/storage/newsportal/2020/5/2/802633/Com-Ca-Ri-Ga.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Curry rice</span>
-                                                <span class="text-primary">$295</span>
-                                            </h5>
-                                            <small class="fst-italic">Eat good feel good. ...</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://www.foodandwine.com/thmb/Tb8S9GekQYj-Obp4wbECxK7F9bQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/201205-xl-beef-fried-rice-2000-c6158a82ec494f77b1e2b75c434bb0f7.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Beef fried rice</span>
-                                                <span class="text-primary">$205</span>
-                                            </h5>
-                                            <small class="fst-italic">The only thing I like better than talking about food is eating...</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="http://bloganchoi.com/wp-content/uploads/2016/07/bo-6-1.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Beefsteak</span>
-                                                <span class="text-primary">$115</span>
-                                            </h5>
-                                            <small class="fst-italic">When I'm bored, I eat. When I'm happy, I eat...</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://img.tastykitchen.vn/resize/764x-/2020/09/14/mam-com-ngon-1-4751.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Portion rice</span>
-                                                <span class="text-primary">$119</span>
-                                            </h5>
-                                            <small class="fst-italic">Eat to live, Don't live to eat...</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://vnn-imgs-f.vgcloud.vn/2019/06/01/12/goi-y-cach-nau-cac-mon-an-ngon-tu-tom-1.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Shrimp</span>
-                                                <span class="text-primary">$185</span>
-                                            </h5>
-                                            <small class="fst-italic">Eat good feel good. ...</small>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="row g-4 " id="menu2">
+                                
                             </div>
                         </div>
                         <div id="tab-3" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://cdn.tgdd.vn/2021/04/CookRecipe/GalleryStep/thit-kho-tau-xi.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Egg fried ribs</span>
-                                                <span class="text-primary">$105</span>
-                                            </h5>
-                                            <small class="fst-italic">When I'm bored, I eat. When I'm happy, I eat...</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://bepxua.vn/wp-content/uploads/2020/10/cut-lon-xao-me-fb-1-rotated.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Stir-fried scrambled eggs with tamarind</span>
-                                                <span class="text-primary">$185</span>
-                                            </h5>
-                                            <small class="fst-italic">Let food be thy medicine and medicine be thy food...</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://cdn.tgdd.vn/2020/09/CookProductThumb/620-620x620-22.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Meat cage eggplant</span>
-                                                <span class="text-primary">$315</span>
-                                            </h5>
-                                            <small class="fst-italic">Eat to live, Don't live to eat...</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://cdn.tgdd.vn/2021/03/CookRecipe/GalleryStep/thanh-pham-1642.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Tomato braised mackerel</span>
-                                                <span class="text-primary">$155</span>
-                                            </h5>
-                                            <small class="fst-italic">The only thing I like better than talking about food is eating...</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://s1.media.ngoisao.vn/resize_580/news/2022/10/26/mam-com-hapda-ngoisaovn-2-ngoisaovn-w800-h800.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Composite combos</span>
-                                                <span class="text-primary">$225</span>
-                                            </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="./asset/picture/menu-6.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
-                                            </h5>
-                                            <small class="fst-italic">I'm afraid to eat it, it's just bad for my stomach and I'll die</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://coupleeatsfood.com/wp-content/uploads/2018/05/Fried-Egg-Tofu-and-Eggplants-Recipe-e1527557304721.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Mixed fried egg tofu</span>
-                                                <span class="text-primary">$305</span>
-                                            </h5>
-                                            <small class="fst-italic">Love is a grain of sand, because it is eaten to overwhelm love</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="https://bepxua.vn/wp-content/uploads/2020/07/dau-hu-khia-nuoc-dua.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Tofu with coconut water</span>
-                                                <span class="text-primary">$405</span>
-                                            </h5>
-                                            <small class="fst-italic">When I'm bored, I eat. When I'm happy, I eat...</small>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="row g-4" id="menu3">
+                                
                             </div>
                         </div>
                     </div>
@@ -484,9 +235,11 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="./Pages/Client/menuorder/menudata.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <!--  Javascript -->
+     <script src="js/main.js"></script><script src="./login.js"></script>
+
 </body>
 
 </html>
