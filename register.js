@@ -12,8 +12,10 @@ const handleRegister=(e)=>{
     alert("Please enter your email and password");
   } else {
     const user = {
-      email: email.value,
+      Email: email.value,
       password: password.value,
+      Status:true,
+      UpdateAt:""
       //name: name.value,
     };
     fetch(apiUser, {
@@ -30,6 +32,6 @@ const handleRegister=(e)=>{
       .then((res) => res.json())
       .then((data) => console.log(data));
       alert("Sign Up Success");
-      window.location.href = "login.htm";
+      window.location.href = "login.html";
   }
 };
