@@ -59,32 +59,29 @@ sendPostRequest();
 
 show()
 
-// function post() {
-//   var name = document.getElementById("name").value;
-//   var detail = document.getElementById("desc").value;
-//   var category = document.getElementById("category").value;
-//   var price = document.getElementById("price").value;
-
-//   console.log(name,detail,category,price);
-//   // var img = document.getElementById("name").value;
-
-//   var OneProduct = {
-//     name: name,
-//     desc:detail,
-//     price: price,
-//     type:category
-//   };
-//   console.log(OneProduct);
-//   axios.post('https://63aa9ccd7d7edb3ae62c214e.mockapi.io/User', OneProduct)
-//   .then(function (response) {
-//     console.log(response);
-//   })
-//   .catch(function (error) {
-//     console.log(error);
-//   });
-//   alert("Done!");
-
-// }
+function post() {
+  var name = document.getElementById("username").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var OneProduct = {
+    UserName: name,
+    Email:email,
+    password:password,
+    Status:true,
+    // promotion:promotion
+  };
+  console.log(OneProduct);
+  axios.post('https://63aa9ccd7d7edb3ae62c214e.mockapi.io/User', OneProduct)
+  .then(function (response) {
+    console.log(response,'abc');
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+  alert("Done!");
+  // window.location.href="account.html";
+  
+  }
 
 function block(id){
 
@@ -125,53 +122,53 @@ window.location.reload(false);
 
 }
 
-// function edit(a) {
-//   var product;
-//   axios.get('https://63aa9ccd7d7edb3ae62c214e.mockapi.io/User')
-//   .then(function (response) {
-//     product=response.data;
-//     for(var i=0;i <= product.length;i++){
-//       if(product[i].id==a){
-//             document.getElementById("id").value=product[i].id;
-//             document.getElementById("name").value=product[i].name;
-//             document.getElementById("desc").value=product[i].desc;
-//             document.getElementById("category").value=product[i].type;
-//             document.getElementById("price").value=product[i].price;
-//           }
-//     }
+function edit(b) {
+  var user;
+  axios.get('https://63aa9ccd7d7edb3ae62c214e.mockapi.io/User')
+  .then(function (response) {
+    user=response.data;
+    for(var i=0;i <= user.length;i++){
+      if(user[i].id==b){
+            document.getElementById("id").value=user[i].id;
+            document.getElementById("username").value=user[i].UserName;
+            document.getElementById("email").value=user[i].Email;
+            document.getElementById("creation").value=user[i].CreateAt;
+            document.getElementById("update").value=user[i].UpdateAt;
+          }
+    }
     
-//   })
+  })
 
     
 
   
-// }
+}
 
-// function editt() {
-//     var id = document.getElementById("id").value;
-//     var name = document.getElementById("name").value;
-//     // var avatar = document.getElementById("img").value;
-//     var price = document.getElementById("price").value;
-//     var desc = document.getElementById("desc").value;
-//     var OneProduct = {
-//         id: id,
-//         name: name,
-//         // avatar: avatar,
-//         price: price,
-//         desc: desc,
+function editt() {
+    var id = document.getElementById("id").value;
+    var UserName = document.getElementById("username").value;
+    var Email = document.getElementById("email").value;
+    var CreateAt = document.getElementById("creation").value;
+    var UpdateAt = document.getElementById("update").value;
+    var OneProduct = {
+        id: id,
+        UserName: UserName,
+        Email:Email,
+        CreateAt: CreateAt,
+        UpdateAt: UpdateAt,
 
-//     }
-//     console.log(OneProduct);
-//     axios.put(`https://63aa9ccd7d7edb3ae62c214e.mockapi.io/User/${id}`, OneProduct)
-//   .then(function (response) {
+    }
+    console.log(OneProduct);
+    axios.put(`https://63aa9ccd7d7edb3ae62c214e.mockapi.io/User/${id}`, OneProduct)
+  .then(function (response) {
 
-//   })
-//   .catch(function (error) {
-//     console.log(error);
-//   });
-//   alert("Done!");
-//   setTimeout(() => {
-//     window.location.reload(false);
-// }, 1000);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+  alert("Done!");
+  setTimeout(() => {
+    window.location.reload(false);
+}, 1000);
     
-// }
+}

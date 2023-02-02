@@ -206,10 +206,10 @@
                     <div class="form-group mb-3">
                         <label
                           for="name"
-                          >Product Name
+                          >UserName
                         </label>
                         <input
-                          id="name"
+                          id="username"
                           name="name"
                           type="text"
                           class="form-control validate"
@@ -219,38 +219,35 @@
                     <div class="form-group mb-3">
                       <label
                         for="description"
-                        >Description</label
+                        >Email</label
                       >
                       <textarea
-                        id="desc"
+                        id="email"
                         class="form-control validate"
                         rows="3"
                         required
                       ></textarea>
                     </div>
                     <div class="form-group mb-3">
-                      <label
-                        for="category"
-                        >Category</label
-                      >
-                      <select
-                        class="custom-select tm-select-accounts"
-                        id="category"
-                      >
-                        <option selected>Select category</option>
-                        <option value="tap-1">Breakfast</option>
-                        <option value="tap-2">Lunch</option>
-                        <option value="tap-3">Dinner</option>
-                      </select>
-                    </div>
+                        <label
+                          for="description"
+                          >Date of creation</label
+                        >
+                        <textarea
+                          id="creation"
+                          class="form-control validate"
+                          rows="3"
+                          required
+                        ></textarea>
+                      </div>
                     <div class="row">
                         <div class="form-group mb-3 col-xs-12 col-sm-6">
                             <label
-                              for="price"
-                              >Price
+                              for="update"
+                              >Date of update
                             </label>
                             <input
-                              id="price"
+                              id="update"
                               name="price"
                               type="text"
                               class="form-control validate"
@@ -261,7 +258,7 @@
                     </div>
                     
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
+                <!-- <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
                   <div class="tm-product-img-dummy mx-auto">
                     <i
                       class="fas fa-cloud-upload-alt tm-upload-icon"
@@ -277,7 +274,7 @@
                       onclick="document.getElementById('fileInput').click();"
                     />
                   </div>
-                </div>
+                </div> -->
                 <div class="col-12" id="aaa">
                     <button type="button" class="btn btn-primary btn-block text-uppercase" onclick="editt()">Update</button><br>
                 </div>
