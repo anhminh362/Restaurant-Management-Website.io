@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
-<body>
+<body onload="a()">
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -83,12 +83,13 @@
                                   </div>
                                   <div class="cart-total">
                                       <strong class="cart-total-title">Tổng Cộng:</strong>
-                                      <span class="cart-total-price">0VNĐ</span>
+                                      <span class="cart-total-price"></span>
                                   </div>
                               </div>
                 
                               <div class="modal-footer">
                                   <button type="button" class="btn btn-danger close-footer">Đóng</button>
+                                  <div onclick="khanh()"></div>
                                   <button type="button" class="btn btn-primary order">Thanh Toán</button>
                               </div>
                           </div>

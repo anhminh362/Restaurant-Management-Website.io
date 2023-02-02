@@ -6,7 +6,7 @@ function show() {
     const sendPostRequest = async () => {
         try {
             await axios.get('https://63aa9d5d7d7edb3ae62c2f74.mockapi.io/Products')
-            .then((res)=>{Product=res.data; console.log(Product,"abc");
+            .then((res)=>{Product=res.data; console.log(Product);
             for (let i in Product) {
                 if (Product[i].type=="tap-1"){
                   var oldPrice=parseInt(Product[i].price.slice(1));
@@ -28,7 +28,7 @@ function show() {
                     menu1 +=`<div class="p-2 "><span class="text-danger " >-`+Product[i].promotion+`%</span></div> `,
                     menu1 +='<div class="p-2 "><span class="text-dark "><del>$'+parseInt(Product[i].price.slice(1))+'</del></span> </div>',
                     menu1 +=`<div class="p-2 "><span class="text-primary ">$`+newPrice+`</span></div> `
-                    menu1 +=`<button class="border-0 ml-2 bg-white">
+                    menu1 +=`<button class="border-0 ml-2 bg-white"  onclick="basket(${Product[i].id})">
                     <span class="material-symbols-outlined">
                      add_shopping_cart
                     </span>
@@ -118,6 +118,66 @@ function show() {
         sendPostRequest();
 };
   show();
+
+  function basket(id) {
+    const sendPostRequest = async () => {
+      try {
+          await axios.get(`https://63aa9d5d7d7edb3ae62c2f74.mockapi.io/Products/${id}`)
+          .then((res)=>{Product=res.data; 
+          axios.post('https://63aa9ceffdc006ba6046faf6.mockapi.io/api/12/ORDER', Product)
+      .then(function (response) {
+        console.log(response.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+      setTimeout(() => {
+        a()
+      }, 2000);
+
+        })
+      } catch (err) {
+          console.error(err,"abc");
+      }
+  }
+      sendPostRequest();
+    }
+  
+
+    function a(){
+      axios.get('https://63aa9ceffdc006ba6046faf6.mockapi.io/api/12/ORDER')
+      .then(function (response) {
+        var product = response.data;
+    
+          var html = "<tr>";
+          for (var i in product) {
+            html += '<td scope="col">' + product[i].name + "</td>";
+            html += '<td scope="col"> <img src="' + product[i].avatar + '" width="45px" height="45px"></td>';
+            html += '<td scope="col">' + product[i].price + "</td>";
+            html += '<td scope="col">' + ` <button class="btn btn-danger" type="button"  onclick="deletes(${product[i].id})">delete</button>`+ "</td>";
+            html += "</tr>";
+          }
+          document.getElementById("table2").innerHTML = html;
+    })}
+    function deletes(id) {
+      var r = confirm("Do you want to delete this product?");
+      if (r == true) {
+        
+          axios.delete(`https://63aa9ceffdc006ba6046faf6.mockapi.io/api/12/ORDER/${id}`)
+          .then(function (response) {
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+    
+    
+        
+          alert("I'm sure!");
+          a();
+      } else {
+          window.location.href = "mockdata.html";
+      }
+    }
 
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("cart");
