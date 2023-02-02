@@ -11,7 +11,13 @@ function show() {
                 if (Product[i].type=="tap-1"){
                     menu1 += '<div class="col-lg-6">';
                     menu1 +='<div class="d-flex align-items-center">'
-                    menu1 +='<img class="flex-shrink-0 img-fluid rounded" src="' +Product[i].img +'" alt="" style="width: 80px">';
+                    if (Product[i].img.indexOf("http")){
+                      menu1 +='<img class="flex-shrink-0 img-fluid rounded" src="../../asset/picture/' +Product[i].img +'"/ alt="" style="width: 80px">';
+                    }
+                    else{
+                      menu1 +='<img class="flex-shrink-0 img-fluid rounded" src="' +Product[i].img +'" alt="" style="width: 80px">';
+                    }
+                    
                     menu1 += ' <div class="w-100 d-flex flex-column text-start ps-4">' 
                     menu1 += '<h5 class="d-flex justify-content-between border-bottom pb-2">' 
                     
