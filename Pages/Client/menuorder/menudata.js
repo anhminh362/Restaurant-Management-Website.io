@@ -9,15 +9,26 @@ function show() {
             .then((res)=>{Product=res.data; console.log(Product,"abc");
             for (let i in Product) {
                 if (Product[i].type=="tap-1"){
+                  var oldPrice=parseInt(Product[i].price.slice(1));
+                  var newPrice=parseInt(oldPrice-oldPrice*Product[i].promotion/100);
                     menu1 += '<div class="col-lg-6">';
                     menu1 +='<div class="d-flex align-items-center">'
-                    menu1 +='<img class="flex-shrink-0 img-fluid rounded" src="' +Product[i].img +'" alt="" style="width: 80px">';
+                    if (Product[i].img.indexOf("http")){
+                      menu1 +='<img class="flex-shrink-0 img-fluid rounded" src="../../asset/picture/' +Product[i].img +'"/ alt="" style="width: 80px">';
+                    }
+                    else{
+                      menu1 +='<img class="flex-shrink-0 img-fluid rounded" src="' +Product[i].img +'" alt="" style="width: 80px">';
+                    }
+                    
                     menu1 += ' <div class="w-100 d-flex flex-column text-start ps-4">' 
                     menu1 += '<h5 class="d-flex justify-content-between border-bottom pb-2">' 
                     
                     menu1 +=' <div><span>'+Product[i].name+'</span></div>';
-                    menu1 +='<div class="d-flex"><span class="text-primary  mr-4">'+Product[i].price+'</span> '+
-                    `<button class="border-0 ml-2 bg-white">
+                    menu1 +='<div class="d-flex mb-3 justify-content-evenly">',
+                    menu1 +=`<div class="p-2 "><span class="text-danger " >-`+Product[i].promotion+`%</span></div> `,
+                    menu1 +='<div class="p-2 "><span class="text-dark "><del>$'+parseInt(Product[i].price.slice(1))+'</del></span> </div>',
+                    menu1 +=`<div class="p-2 "><span class="text-primary ">$`+newPrice+`</span></div> `
+                    menu1 +=`<button class="border-0 ml-2 bg-white">
                     <span class="material-symbols-outlined">
                      add_shopping_cart
                     </span>
@@ -30,15 +41,27 @@ function show() {
                 }
                 
                 else if (Product[i].type=="tap-2"){
+                  var oldPrice=parseInt(Product[i].price.slice(1));
+                  var newPrice=parseInt(oldPrice-oldPrice*Product[i].promotion/100);
                     menu2 += '<div class="col-lg-6">';
                     menu2 +='<div class="d-flex align-items-center">'
-                    menu2 +='<img class="flex-shrink-0 img-fluid rounded" src="' +Product[i].img +'" alt="" style="width: 80px">';
+                    if (Product[i].img.indexOf("http")){
+                      menu2 +='<img class="flex-shrink-0 img-fluid rounded" src="../../asset/picture/' +Product[i].img +'"/ alt="" style="width: 80px">';
+                    }
+                    else{
+                      menu2 +='<img class="flex-shrink-0 img-fluid rounded" src="' +Product[i].img +'" alt="" style="width: 80px">';
+                    }
+                    
                     menu2 += ' <div class="w-100 d-flex flex-column text-start ps-4">' 
                     menu2 += '<h5 class="d-flex justify-content-between border-bottom pb-2">' 
                     
                     menu2 +=' <div><span>'+Product[i].name+'</span></div>';
-                    menu2 +='<div class="d-flex"><span class="text-primary  mr-4">'+Product[i].price+'</span> '+
-                    `<button class="border-0 ml-2 bg-white">
+                    menu2 +='<div class="d-flex mb-3 justify-content-evenly">',
+                    menu2 +=`<div class="p-2 "><span class="text-danger " >-`+Product[i].promotion+`%</span></div> `,
+                    menu2 +='<div class="p-2 "><span class="text-dark "><del>$'+parseInt(Product[i].price.slice(1))+'</del></span> </div>',
+                    menu2 +=`<div class="p-2 "><span class="text-primary ">$`+newPrice+`</span></div> `
+
+                    menu2+=`<button class="border-0 ml-2 bg-white">
                     <span class="material-symbols-outlined">
                      add_shopping_cart
                     </span>
@@ -50,15 +73,27 @@ function show() {
                     menu2 += '</div>';
                 }
                 else  {
+                  var oldPrice=parseInt(Product[i].price.slice(1));
+                  var newPrice=parseInt(oldPrice-oldPrice*Product[i].promotion/100);
                     menu3 += '<div class="col-lg-6">';
                     menu3 +='<div class="d-flex align-items-center">'
-                    menu3 +='<img class="flex-shrink-0 img-fluid rounded" src="' +Product[i].img +'" alt="" style="width: 80px">';
+                    if (Product[i].img.indexOf("http")){
+                      menu3 +='<img class="flex-shrink-0 img-fluid rounded" src="../../asset/picture/' +Product[i].img +'"/ alt="" style="width: 80px">';
+                    }
+                    else{
+                      menu3 +='<img class="flex-shrink-0 img-fluid rounded" src="' +Product[i].img +'" alt="" style="width: 80px">';
+                    }
+                    
                     menu3 += ' <div class="w-100 d-flex flex-column text-start ps-4">' 
                     menu3 += '<h5 class="d-flex justify-content-between border-bottom pb-2">' 
                     
                     menu3 +=' <div><span>'+Product[i].name+'</span></div>';
-                    menu3 +='<div class="d-flex"><span class="text-primary  mr-4">'+Product[i].price+'</span> '+
-                    `<button class="border-0 ml-2 bg-white">
+                    menu3 +='<div class="d-flex mb-3 justify-content-evenly">',
+                    menu3 +=`<div class="p-2 "><span class="text-danger " >-`+Product[i].promotion+`%</span></div> `,
+                    menu3 +='<div class="p-2 "><span class="text-dark "><del>$'+parseInt(Product[i].price.slice(1))+'</del></span> </div>',
+                    menu3 +=`<div class="p-2 "><span class="text-primary ">$`+newPrice+`</span></div> `
+
+                    menu3 +=`<button class="border-0 ml-2 bg-white">
                     <span class="material-symbols-outlined">
                      add_shopping_cart
                     </span>
@@ -69,6 +104,7 @@ function show() {
                     menu3 += '</div>';
                     menu3 += '</div>';
                 }
+                
             }
             
         document.getElementById("menu1").innerHTML = menu1;
