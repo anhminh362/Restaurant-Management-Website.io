@@ -73,24 +73,26 @@
                                   <span class="close">&times;</span>
                               </div>
                               <div class="modal-body">
-                                  <div class="cart-row">
-                                      <span class="cart-item cart-header cart-column">Sản Phẩm</span>
-                                      <span class="cart-price cart-header cart-column">Giá</span>
-                                      <span class="cart-quantity cart-header cart-column">Số Lượng</span>
-                                  </div>
-                                  <div class="cart-items">
-                
-                                  </div>
+                                <table id="table1" class="table table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Avatar</th>
+                                        <th scope="col">Price</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="table2">
+                                    </tbody>
+                                </table>
                                   <div class="cart-total">
                                       <strong class="cart-total-title">Tổng Cộng:</strong>
-                                      <span class="cart-total-price"></span>
+                                      <span id="productorder" class="cart-total-price"></span>
                                   </div>
                               </div>
                 
                               <div class="modal-footer">
                                   <button type="button" class="btn btn-danger close-footer">Đóng</button>
-                                  <div onclick="khanh()"></div>
-                                  <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                                  <button type="button" class="btn btn-primary order" onClick="order()">Thanh Toán</button>
                               </div>
                           </div>
                       </div>
