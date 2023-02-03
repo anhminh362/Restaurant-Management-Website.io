@@ -35,7 +35,7 @@ const handleLogin = (e) => {
   } else if (email.value == "yumyum@gmail.com" && password.value == "123456789") {
     window.localStorage.setItem('account', "admin");
     alert('Welcome admin ...');
-    window.location.assign('Pages/Admin/index.html');
+    window.location.assign('Pages/Admin/product.html');
   }
   else {
     getUser().then((data) => {
