@@ -41,7 +41,7 @@ const handleLogin = (e) => {
     getUser().then((data) => {
       const user = data.find(
         (user) =>
-          user.email == email.value && user.password == password.value
+          user.Email == email.value && user.password == password.value
       );
       if (user) {
         window.localStorage.setItem('account', user.email);
