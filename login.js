@@ -35,13 +35,13 @@ const handleLogin = (e) => {
   } else if (email.value == "yumyum@gmail.com" && password.value == "123456789") {
     window.localStorage.setItem('account', "admin");
     alert('Welcome admin ...');
-    window.location.assign('Pages/Admin/index.html');
+    window.location.assign('Pages/Admin/product.html');
   }
   else {
     getUser().then((data) => {
       const user = data.find(
         (user) =>
-          user.email == email.value && user.password == password.value
+          user.Email == email.value && user.password == password.value
       );
       if (user) {
         window.localStorage.setItem('account', user.email);

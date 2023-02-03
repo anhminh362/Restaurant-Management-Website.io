@@ -61,8 +61,7 @@ function show() {
                 menu2 += `<div class="p-2 "><span class="text-danger " >-` + Product[i].promotion + `%</span></div> `,
                 menu2 += '<div class="p-2 "><span class="text-dark "><del>$' + parseInt(Product[i].price.slice(1)) + '</del></span> </div>',
                 menu2 += `<div class="p-2 "><span class="text-primary ">$` + newPrice + `</span></div> `
-
-              menu2 += `<button class="border-0 ml-2 bg-white">
+              menu2 += `<button class="border-0 ml-2 bg-white"  onclick="basket (${Product[i].id})">
                     <span class="material-symbols-outlined">
                      add_shopping_cart
                     </span>
@@ -93,8 +92,7 @@ function show() {
                 menu3 += `<div class="p-2 "><span class="text-danger " >-` + Product[i].promotion + `%</span></div> `,
                 menu3 += '<div class="p-2 "><span class="text-dark "><del>$' + parseInt(Product[i].price.slice(1)) + '</del></span> </div>',
                 menu3 += `<div class="p-2 "><span class="text-primary ">$` + newPrice + `</span></div> `
-
-              menu3 += `<button class="border-0 ml-2 bg-white">
+              menu3 += `<button class="border-0 ml-2 bg-white"  onclick="basket (${Product[i].id})">
                     <span class="material-symbols-outlined">
                      add_shopping_cart
                     </span>
